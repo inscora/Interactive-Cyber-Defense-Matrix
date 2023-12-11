@@ -7,6 +7,8 @@
 ul li label {
   padding-left: 0.5rem;
   font-family: Arial, Helvetica, sans-serif;
+  max-height: 450px;
+  overflow-y: scroll;
 }
 
 g.hide-solution {
