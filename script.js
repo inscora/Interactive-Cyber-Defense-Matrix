@@ -171,22 +171,22 @@ SOLUTIONS.forEach(solution => {
   svgRect.classList.toggle(HIDE_CLASS_NAME);
 
   //Create elements per solution id
-  //const listItemElement = document.createElement('li');
-  //const labelElement = document.createElement('label');
-  //const inputElement = document.createElement('input');
+  const listItemElement = document.createElement('li');
+  const labelElement = document.createElement('label');
+  const inputElement = document.createElement('input');
 
   //Set attributes on elements
-  //inputElement.setAttribute('type', 'checkbox');
-  //inputElement.setAttribute('id', `${solution.id}-checkbox`);
-  //labelElement.setAttribute('for', `${solution.id}-checkbox`);
-  //labelElement.textContent = solution.label;
+  inputElement.setAttribute('type', 'checkbox');
+  inputElement.setAttribute('id', `${solution.id}-checkbox`);
+  labelElement.setAttribute('for', `${solution.id}-checkbox`);
+  labelElement.textContent = solution.label;
 
   //Append elements to li
-  //listItemElement.appendChild(inputElement);
-  //listItemElement.appendChild(labelElement);
+  listItemElement.appendChild(inputElement);
+  listItemElement.appendChild(labelElement);
 
   //Append li to ul
-  //unorderedListElement.appendChild(listItemElement);
+ unorderedListElement.appendChild(listItemElement);
 
   //Add event listener to show/hide matching svg rect
   inputElement.addEventListener('change', (event) => {
