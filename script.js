@@ -210,7 +210,7 @@ SOLUTIONS.forEach(solution => {
   colorCheckbox.setAttribute('type', 'checkbox');
   colorCheckbox.setAttribute('id', `${solution.id}-color-checkbox`);
   colorLabel.setAttribute('for', `${solution.id}-color-checkbox`);
-  colorLabel.textContent = 'New ${solution.label}';
+  colorLabel.textContent = `New ${solution.label}`;
 
   // Append elements to li
   listItemElement.appendChild(showHideCheckbox);
