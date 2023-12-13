@@ -11,6 +11,13 @@ ul li label {
   overflow-y: scroll;
 }
 
+section{
+  width:1489px;
+  height:205px;
+  column-count:5;
+  transform:translatex(3px) translatey(453px);
+ }
+
 g.hide-solution {
   display: none;
 }
