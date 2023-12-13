@@ -31,6 +31,10 @@ const SOLUTIONS = [{
     label: 'VPN'
   },
   {
+    id: 'firewall',
+    label: 'Firewall'
+  },
+  {
     id: 'managedGrc',
     label: 'Managed GRC'
   },
