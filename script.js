@@ -187,33 +187,52 @@ const HIDE_CLASS_NAME = 'hide-solution';
 
 
 SOLUTIONS.forEach(solution => {
-  //Get ul and svg elements
+  // Get elements
   const unorderedListElement = document.getElementById('solution-checkboxes');
   const svgRect = document.getElementById(solution.id);
-  
-  //hide all svg elements by default
-  svgRect.classList.toggle(HIDE_CLASS_NAME);
 
-  //Create elements per solution id
+  // Hide SVG by default
+  svgRect.classList.add(HIDE_CLASS_NAME);
+
+  // Create elements
   const listItemElement = document.createElement('li');
-  const labelElement = document.createElement('label');
-  const inputElement = document.createElement('input');
+  const showHideLabel = document.createElement('label');
+  const showHideCheckbox = document.createElement('input');
+  const colorLabel = document.createElement('label');
+  const colorCheckbox = document.createElement('input');
 
-  //Set attributes on elements
-  inputElement.setAttribute('type', 'checkbox');
-  inputElement.setAttribute('id', `${solution.id}-checkbox`);
-  labelElement.setAttribute('for', `${solution.id}-checkbox`);
-  labelElement.textContent = solution.label;
+  // Set attributes
+  showHideCheckbox.setAttribute('type', 'checkbox');
+  showHideCheckbox.setAttribute('id', `${solution.id}-show-hide-checkbox`);
+  showHideLabel.setAttribute('for', `${solution.id}-show-hide-checkbox`);
+  showHideLabel.textContent = 'Show/Hide';
 
-  //Append elements to li
-  listItemElement.appendChild(inputElement);
-  listItemElement.appendChild(labelElement);
+  colorCheckbox.setAttribute('type', 'checkbox');
+  colorCheckbox.setAttribute('id', `${solution.id}-color-checkbox`);
+  colorLabel.setAttribute('for', `${solution.id}-color-checkbox`);
+  colorLabel.textContent = 'Change Color';
 
-  //Append li to ul
- unorderedListElement.appendChild(listItemElement);
+  // Append elements to li
+  listItemElement.appendChild(showHideCheckbox);
+  listItemElement.appendChild(showHideLabel);
+  listItemElement.appendChild(colorCheckbox);
+  listItemElement.appendChild(colorLabel);
 
-  //Add event listener to show/hide matching svg rect
-  inputElement.addEventListener('change', (event) => {
+  // Append li to ul
+  unorderedListElement.appendChild(listItemElement);
+
+  // Add event listeners
+  showHideCheckbox.addEventListener('change', (event) => {
     svgRect.classList.toggle(HIDE_CLASS_NAME);
+  });
+
+  colorCheckbox.addEventListener('change', (event) => {
+    if (event.target.checked) {
+      // Change SVG color
+      svgRect.style.fill = '#08DD4C'; // Change to desired color
+    } else {
+      // Reset SVG color to default
+      svgRect.style.fill = '#355bb7';
+    }
   });
 });
