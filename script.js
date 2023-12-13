@@ -23,8 +23,8 @@ const SOLUTIONS = [{
     label: 'Managed EDR'
   },
   {
-    id: 'managedPatching',
-    label: 'Managed Patching'
+    id: 'patching',
+    label: 'Patching'
   },
   {
     id: 'vpn',
@@ -35,52 +35,52 @@ const SOLUTIONS = [{
     label: 'Firewall'
   },
   {
-    id: 'managedGrc',
-    label: 'Managed GRC'
+    id: 'managedSiem',
+    label: 'Managed SIEM'
   },
   {
-    id: 'staffingAndRecruiting',
-    label: 'Staffing and Recruiting'
+    id: 'incidentResponse',
+    label: 'Incident Response'
   },
   {
-    id: 'managedControlsAssurance',
-    label: 'Managed Controls Assurance'
+    id: 'vmDbBackup',
+    label: 'VM/DB Backup'
   },
   {
-    id: 'policyEnforcement',
-    label: 'Policy Enforcement'
+    id: 'phishingTests',
+    label: 'Phishing Tests'
   },
   {
-    id: 'dataIdAndClassification',
-    label: 'Data ID and Classification'
+    id: 'managedPatching',
+    label: 'Managed Patching'
   },
   {
-    id: 'attackSurfaceManagement',
-    label: 'Attack Surface Management'
+    id: 'penTest',
+    label: 'Pen Test'
   },
   {
-    id: 'apiDiscovery',
-    label: 'API Discovery'
+    id: 'ztna',
+    label: 'ZTNA'
   },
   {
-    id: 'apiProtection',
-    label: 'API Protection'
+    id: 'codeTesting',
+    label: 'Code Testing'
   },
   {
-    id: 'pam',
-    label: 'PAM'
+    id: 'botManagement',
+    label: 'Bot Management'
   },
   {
-    id: 'dataLossPrevention',
-    label: 'Data Loss Prevention'
+    id: 'managedFirewall',
+    label: 'Managed Firewall'
   },
   {
-    id: 'impersonation',
-    label: 'Impersonation'
+    id: 'networkIntelligence',
+    label: 'Network Intelligence'
   },
   {
-    id: 'darkWebScanning',
-    label: 'Dark Web Scanning'
+    id: 'dns',
+    label: 'DNS'
   },
   {
     id: 'ddos',
@@ -91,80 +91,96 @@ const SOLUTIONS = [{
     label: 'DDoS Testing'
   },
   {
-    id: 'dns',
-    label: 'DNS'
+    id: 'pam',
+    label: 'PAM'
   },
   {
-    id: 'networkIntelligence',
-    label: 'Network Intelligence'
+    id: 'impersonation',
+    label: 'Impersonation'
   },
   {
-    id: 'managedFirewall',
-    label: 'Managed Firewall'
+    id: 'drPlanAndRehearsals',
+    label: 'DR Plan and Rehearsals'
   },
   {
-    id: 'botManagement',
-    label: 'Bot Management'
+    id: 'staffingAndRecruiting',
+    label: 'Staffing and Recruiting'
+  },
+  {
+    id: 'attackSurfaceManagement',
+    label: 'Attack Surface Management'
   },
   {
     id: 'sse',
     label: 'SSE'
   },
   {
-    id: 'bugBounty',
-    label: 'Bug Bounty'
+    id: 'soc',
+    label: 'SOC'
+  }, 
+  {
+    id: 'managedGrc',
+    label: 'Managed GRC'
   },
   {
-    id: 'penTest',
-    label: 'Pen Test'
+    id: 'managedControlsAssurance',
+    label: 'Managed Controls Assurance'
   },
   {
-    id: 'otSecurity',
-    label: 'OT Security'
+    id: 'dataIdAndClassification',
+    label: 'Data ID and Classification'
   },
   {
     id: 'microsegmentation',
     label: 'Microsegmentation'
   },
   {
-    id: 'managedSiem',
-    label: 'Managed SIEM'
+    id: 'policyEnforcement',
+    label: 'Policy Enforcement'
   },
   {
-    id: 'soc',
-    label: 'SOC'
+    id: 'bugBounty',
+    label: 'Bug Bounty'
   },
   {
-    id: 'incidentResponse',
-    label: 'Incident Response'
-  }, ,
+    id: 'otSecurity',
+    label: 'OT Security'
+  },
+  {
+    id: 'apiDiscovery',
+    label: 'API Discovery'
+  },
+  {
+    id: 'apiProtection',
+    label: 'API Protection'
+  },
+  {
+    id: 'dataLossPrevention',
+    label: 'Data Loss Prevention'
+  },
+  {
+    id: 'darkWebScanning',
+    label: 'Dark Web Scanning'
+  },
   {
     id: 'ransomwareNegotiation',
     label: 'RansomwareNegotiation'
-  },
-  {
-    id: 'tapeBackup',
-    label: 'Tape Backup'
-  },
-  {
-    id: 'vmDbBackup',
-    label: 'VM/DB Backup'
-  },
-  {
-    id: 'draas',
-    label: 'DR-aaS'
-  },
-  {
-    id: 'cloudRecovery',
-    label: 'Cloud Recovery'
   },
   {
     id: 'deviceBackups',
     label: 'Device Backups'
   },
   {
-    id: 'drPlanAndRehearsals',
-    label: 'DR Plan and Rehearsals'
+    id: 'cloudRecovery',
+    label: 'Cloud Recovery'
+  },
+  {
+    id: 'draas',
+    label: 'DR-aaS'
+  },
+  {
+    id: 'tapeBackup',
+    label: 'Tape Backup'
   }
 ];
 const HIDE_CLASS_NAME = 'hide-solution';
