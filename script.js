@@ -3,6 +3,34 @@ const SOLUTIONS = [{
     label: 'vCiso: Maturity M&A Assessments, Roadmap Build'
   },
   {
+    id: 'awarenessTraining',
+    label: 'Awareness Training'
+  },
+  {
+    id: 'mfaSso',
+    label: 'MFA / SSO'
+  },
+  {
+    id: 'emailSecurity',
+    label: 'Email Security'
+  },
+  {
+    id: 'iam',
+    label: 'IAM'
+  },
+  {
+    id: 'managedEdr',
+    label: 'Managed EDR'
+  },
+  {
+    id: 'managedPatching',
+    label: 'Managed Patching'
+  },
+  {
+    id: 'vpn',
+    label: 'VPN'
+  },
+  {
     id: 'managedGrc',
     label: 'Managed GRC'
   },
@@ -15,24 +43,8 @@ const SOLUTIONS = [{
     label: 'Managed Controls Assurance'
   },
   {
-    id: 'awarenessTraining',
-    label: 'Awareness Training'
-  },
-  {
     id: 'policyEnforcement',
     label: 'Policy Enforcement'
-  },
-  {
-    id: 'iam',
-    label: 'IAM'
-  },
-  {
-    id: 'mfaSso',
-    label: 'MFA / SSO'
-  },
-  {
-    id: 'emailSecurity',
-    label: 'Email Security'
   },
   {
     id: 'dataIdAndClassification',
@@ -103,20 +115,12 @@ const SOLUTIONS = [{
     label: 'Pen Test'
   },
   {
-    id: 'managedPatching',
-    label: 'Managed Patching'
-  },
-  {
     id: 'otSecurity',
     label: 'OT Security'
   },
   {
     id: 'microsegmentation',
     label: 'Microsegmentation'
-  },
-  {
-    id: 'managedEdr',
-    label: 'Managed EDR'
   },
   {
     id: 'managedSiem',
