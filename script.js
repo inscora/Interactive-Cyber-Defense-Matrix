@@ -184,6 +184,7 @@ const SOLUTIONS = [{
   }
 ];
 const HIDE_CLASS_NAME = 'hide-solution';
+const COLOR_CLASS_NAME = 'change-color';
 
 SOLUTIONS.forEach(solution => {
   // Get elements
@@ -204,7 +205,7 @@ SOLUTIONS.forEach(solution => {
   showHideCheckbox.setAttribute('type', 'checkbox');
   showHideCheckbox.setAttribute('id', `${solution.id}-show-hide-checkbox`);
   showHideLabel.setAttribute('for', `${solution.id}-show-hide-checkbox`);
-  showHideLabel.textContent = "Have";
+  showHideLabel.textContent = 'Show/Hide';
 
   // Add show/hide checkbox and label to list item
   listItemElement.appendChild(showHideCheckbox);
@@ -214,7 +215,7 @@ SOLUTIONS.forEach(solution => {
   colorCheckbox.setAttribute('type', 'checkbox');
   colorCheckbox.setAttribute('id', `${solution.id}-color-checkbox`);
   colorLabel.setAttribute('for', `${solution.id}-color-checkbox`);
-  colorLabel.textContent = `New ${solution.label}`;
+  colorLabel.textContent = 'Change Color';
 
   // Add color checkbox and label to list item
   listItemElement.appendChild(colorCheckbox);
@@ -232,10 +233,10 @@ SOLUTIONS.forEach(solution => {
   colorCheckbox.addEventListener('change', (event) => {
     if (event.target.checked) {
       // Change SVG color to desired value
-      svgRect.classList.add('change-color');
+      svgRect.classList.add(COLOR_CLASS_NAME);
     } else {
       // Reset SVG color to default
-      svgRect.classList.remove('change-color');
+      svgRect.classList.remove(COLOR_CLASS_NAME);
     }
   });
 });
