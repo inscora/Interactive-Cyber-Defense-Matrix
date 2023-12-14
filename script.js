@@ -100,7 +100,7 @@ const SOLUTIONS = [{
   },
   {
     id: 'drPlanAndRehearsals',
-    label: 'DR Plan and Rehearsals'
+    label: 'DR Plan and Rehears'
   },
   {
     id: 'staffingAndRecruiting',
@@ -108,7 +108,7 @@ const SOLUTIONS = [{
   },
   {
     id: 'attackSurfaceManagement',
-    label: 'Attack Surface Management'
+    label: 'Attack Surface Mngmt'
   },
   {
     id: 'sse',
@@ -124,11 +124,11 @@ const SOLUTIONS = [{
   },
   {
     id: 'managedControlsAssurance',
-    label: 'Managed Controls Assurance'
+    label: "Mng'd Controls Assurance"
   },
   {
     id: 'dataIdAndClassification',
-    label: 'Data ID and Classification'
+    label: 'Data ID and Class'
   },
   {
     id: 'microsegmentation',
@@ -164,7 +164,7 @@ const SOLUTIONS = [{
   },
   {
     id: 'ransomwareNegotiation',
-    label: 'RansomwareNegotiation'
+    label: 'Ransom Negotiation'
   },
   {
     id: 'deviceBackups',
