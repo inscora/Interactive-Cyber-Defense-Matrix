@@ -1,6 +1,6 @@
 .grid {
   display: grid;
-  grid-template-columns: 250px 1fr;
+  grid-template-columns: 275px 1fr;
   gap: 10px;
 }
 
@@ -15,7 +15,7 @@ section{
 width:1489px;
 height:205px;
 column-count:5;
-transform:translatex(3px) translatey(453px);
+transform:translatex(0px) translatey(460px);
 }
 
 g.hide-solution {
