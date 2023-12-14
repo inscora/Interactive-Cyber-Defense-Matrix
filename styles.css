@@ -1,23 +1,27 @@
 .grid {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    gap: 10px;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 10px;
 }
 
 ul li label {
-  padding-left: 0.5rem;
-  font-family: Arial, Helvetica, sans-serif;
-  max-height: 450px;
-  overflow-y: scroll;
+padding-left: 0.5rem;
+font-family: Arial, Helvetica, sans-serif;
+max-height: 450px;
+overflow-y: scroll;
 }
 
 section{
-  width:1489px;
-  height:205px;
-  column-count:5;
-  transform:translatex(3px) translatey(453px);
- }
+width:1489px;
+height:205px;
+column-count:5;
+transform:translatex(3px) translatey(453px);
+}
 
 g.hide-solution {
-  display: none;
+display: none;
+}
+
+.change-color {
+fill: #09d159;
 }

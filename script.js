@@ -185,35 +185,57 @@ const SOLUTIONS = [{
 ];
 const HIDE_CLASS_NAME = 'hide-solution';
 
-
 SOLUTIONS.forEach(solution => {
-  //Get ul and svg elements
+  // Get elements
   const unorderedListElement = document.getElementById('solution-checkboxes');
   const svgRect = document.getElementById(solution.id);
-  
-  //hide all svg elements by default
-  svgRect.classList.toggle(HIDE_CLASS_NAME);
 
-  //Create elements per solution id
+  // Hide all SVG elements by default
+  svgRect.classList.add(HIDE_CLASS_NAME);
+
+  // Create list items with checkbox and label
   const listItemElement = document.createElement('li');
-  const labelElement = document.createElement('label');
-  const inputElement = document.createElement('input');
+  const showHideCheckbox = document.createElement('input');
+  const showHideLabel = document.createElement('label');
+  const colorCheckbox = document.createElement('input');
+  const colorLabel = document.createElement('label');
 
-  //Set attributes on elements
-  inputElement.setAttribute('type', 'checkbox');
-  inputElement.setAttribute('id', `${solution.id}-checkbox`);
-  labelElement.setAttribute('for', `${solution.id}-checkbox`);
-  labelElement.textContent = solution.label;
+  // Set attributes for show/hide checkbox and label
+  showHideCheckbox.setAttribute('type', 'checkbox');
+  showHideCheckbox.setAttribute('id', `${solution.id}-show-hide-checkbox`);
+  showHideLabel.setAttribute('for', `${solution.id}-show-hide-checkbox`);
+  showHideLabel.textContent = "Have";
 
-  //Append elements to li
-  listItemElement.appendChild(inputElement);
-  listItemElement.appendChild(labelElement);
+  // Add show/hide checkbox and label to list item
+  listItemElement.appendChild(showHideCheckbox);
+  listItemElement.appendChild(showHideLabel);
 
-  //Append li to ul
+  // Set attributes for color checkbox and label
+  colorCheckbox.setAttribute('type', 'checkbox');
+  colorCheckbox.setAttribute('id', `${solution.id}-color-checkbox`);
+  colorLabel.setAttribute('for', `${solution.id}-color-checkbox`);
+  colorLabel.textContent = `New ${solution.label}`;
+
+  // Add color checkbox and label to list item
+  listItemElement.appendChild(colorCheckbox);
+  listItemElement.appendChild(colorLabel);
+
+  // Append list item to unordered list
   unorderedListElement.appendChild(listItemElement);
 
-  //Add event listener to show/hide matching svg rect
-  inputElement.addEventListener('change', (event) => {
+  // Add event listeners for show/hide
+  showHideCheckbox.addEventListener('change', (event) => {
     svgRect.classList.toggle(HIDE_CLASS_NAME);
+  });
+
+  // Add event listeners for color change
+  colorCheckbox.addEventListener('change', (event) => {
+    if (event.target.checked) {
+      // Change SVG color to desired value
+      svgRect.classList.add('change-color');
+    } else {
+      // Reset SVG color to default
+      svgRect.classList.remove('change-color');
+    }
   });
 });
