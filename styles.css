@@ -13,7 +13,6 @@ overflow-y: scroll;
 
 section{
 width:1489px;
-height:205px;
 column-count:5;
 transform:translatex(0px) translatey(460px);
 }
