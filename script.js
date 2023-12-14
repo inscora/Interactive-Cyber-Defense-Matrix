@@ -231,12 +231,6 @@ SOLUTIONS.forEach(solution => {
 
   // Add event listeners for color change
   colorCheckbox.addEventListener('change', (event) => {
-    if (event.target.checked) {
-      // Change SVG color to desired value
-      svgRect.classList.add(COLOR_CLASS_NAME);
-    } else {
-      // Reset SVG color to default
-      svgRect.classList.remove(COLOR_CLASS_NAME);
-    }
+    svgRect.classList.toggle(COLOR_CLASS_NAME);
   });
 });
