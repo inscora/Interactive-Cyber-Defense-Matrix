@@ -205,7 +205,7 @@ SOLUTIONS.forEach(solution => {
   showHideCheckbox.setAttribute('type', 'checkbox');
   showHideCheckbox.setAttribute('id', `${solution.id}-show-hide-checkbox`);
   showHideLabel.setAttribute('for', `${solution.id}-show-hide-checkbox`);
-  showHideLabel.textContent = 'Show/Hide';
+  //showHideLabel.textContent = 'Show/Hide';
 
   // Add show/hide checkbox and label to list item
   listItemElement.appendChild(showHideCheckbox);
@@ -215,7 +215,7 @@ SOLUTIONS.forEach(solution => {
   colorCheckbox.setAttribute('type', 'checkbox');
   colorCheckbox.setAttribute('id', `${solution.id}-color-checkbox`);
   colorLabel.setAttribute('for', `${solution.id}-color-checkbox`);
-  colorLabel.textContent = 'Change Color';
+  colorLabel.textContent = solution.label;
 
   // Add color checkbox and label to list item
   listItemElement.appendChild(colorCheckbox);
