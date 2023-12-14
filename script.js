@@ -1,6 +1,6 @@
 const SOLUTIONS = [{
     id: 'vCiso',
-    label: 'vCiso: Maturity M&A Assessments, Roadmap Build'
+    label: 'vCiso'
   },
   {
     id: 'awarenessTraining',
