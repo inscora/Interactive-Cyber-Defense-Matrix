@@ -184,53 +184,36 @@ const SOLUTIONS = [{
   }
 ];
 const HIDE_CLASS_NAME = 'hide-solution';
-const COLOR_CLASS_NAME = 'change-color';
+
 
 SOLUTIONS.forEach(solution => {
-  // Get elements
+  //Get ul and svg elements
   const unorderedListElement = document.getElementById('solution-checkboxes');
   const svgRect = document.getElementById(solution.id);
+  
+  //hide all svg elements by default
+  svgRect.classList.toggle(HIDE_CLASS_NAME);
 
-  // Hide all SVG elements by default
-  svgRect.classList.add(HIDE_CLASS_NAME);
-
-  // Create list items with checkbox and label
+  //Create elements per solution id
   const listItemElement = document.createElement('li');
-  const showHideCheckbox = document.createElement('input');
-  const showHideLabel = document.createElement('label');
-  const colorCheckbox = document.createElement('input');
-  const colorLabel = document.createElement('label');
+  const labelElement = document.createElement('label');
+  const inputElement = document.createElement('input');
 
-  // Set attributes for show/hide checkbox and label
-  showHideCheckbox.setAttribute('type', 'checkbox');
-  showHideCheckbox.setAttribute('id', `${solution.id}-show-hide-checkbox`);
-  showHideLabel.setAttribute('for', `${solution.id}-show-hide-checkbox`);
-  //showHideLabel.textContent = 'Show/Hide';
+  //Set attributes on elements
+  inputElement.setAttribute('type', 'checkbox');
+  inputElement.setAttribute('id', `${solution.id}-checkbox`);
+  labelElement.setAttribute('for', `${solution.id}-checkbox`);
+  labelElement.textContent = solution.label;
 
-  // Add show/hide checkbox and label to list item
-  listItemElement.appendChild(showHideCheckbox);
-  listItemElement.appendChild(showHideLabel);
+  //Append elements to li
+  listItemElement.appendChild(inputElement);
+  listItemElement.appendChild(labelElement);
 
-  // Set attributes for color checkbox and label
-  colorCheckbox.setAttribute('type', 'checkbox');
-  colorCheckbox.setAttribute('id', `${solution.id}-color-checkbox`);
-  colorLabel.setAttribute('for', `${solution.id}-color-checkbox`);
-  colorLabel.textContent = solution.label;
-
-  // Add color checkbox and label to list item
-  listItemElement.appendChild(colorCheckbox);
-  listItemElement.appendChild(colorLabel);
-
-  // Append list item to unordered list
+  //Append li to ul
   unorderedListElement.appendChild(listItemElement);
 
-  // Add event listeners for show/hide
-  showHideCheckbox.addEventListener('change', (event) => {
+  //Add event listener to show/hide matching svg rect
+  inputElement.addEventListener('change', (event) => {
     svgRect.classList.toggle(HIDE_CLASS_NAME);
-  });
-
-  // Add event listeners for color change
-  colorCheckbox.addEventListener('change', (event) => {
-    svgRect.classList.toggle(COLOR_CLASS_NAME);
   });
 });
