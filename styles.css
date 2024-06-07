@@ -5,7 +5,6 @@
   padding: 20px;
 }
 
-
 ul li label {
   padding-left: 0.5rem;
   font-family: Arial, Helvetica, sans-serif;
@@ -22,6 +21,6 @@ section {
   column-gap: 20px;
 }
 
-g.hide-solution {
-display: none;
+.hide-solution {
+  display: none;
 }
