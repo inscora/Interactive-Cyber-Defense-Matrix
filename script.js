@@ -198,6 +198,8 @@ SOLUTIONS.forEach(solution => {
 
   labelElement.textContent = solution.label;
   
+  listItemElement.appendChild(labelElement);
+
   const colors = ['red', 'green', 'blue'];
   colors.forEach(color => {
     const inputElement = document.createElement('input');
@@ -221,6 +223,5 @@ SOLUTIONS.forEach(solution => {
     });
   });
 
-  listItemElement.appendChild(labelElement);
   unorderedListElement.appendChild(listItemElement);
 });
