@@ -186,34 +186,35 @@ const SOLUTIONS = [{
 const HIDE_CLASS_NAME = 'hide-solution';
 
 
-SOLUTIONS.forEach(solution => {
-  //Get ul and svg elements
+document.addEventListener('DOMContentLoaded', () => {
   const unorderedListElement = document.getElementById('solution-checkboxes');
-  const svgRect = document.getElementById(solution.id);
-  
-  //hide all svg elements by default
-  svgRect.classList.toggle(HIDE_CLASS_NAME);
+  SOLUTIONS.forEach(solution => {
+      const svgRect = document.getElementById(solution.id);
 
-  //Create elements per solution id
-  const listItemElement = document.createElement('li');
-  const labelElement = document.createElement('label');
-  const inputElement = document.createElement('input');
+      // Hide all svg elements by default
+      svgRect.classList.add(HIDE_CLASS_NAME);
 
-  //Set attributes on elements
-  inputElement.setAttribute('type', 'checkbox');
-  inputElement.setAttribute('id', `${solution.id}-checkbox`);
-  labelElement.setAttribute('for', `${solution.id}-checkbox`);
-  labelElement.textContent = solution.label;
+      // Create elements per solution id
+      const listItemElement = document.createElement('li');
+      const labelElement = document.createElement('label');
+      const inputElement = document.createElement('input');
 
-  //Append elements to li
-  listItemElement.appendChild(inputElement);
-  listItemElement.appendChild(labelElement);
+      // Set attributes on elements
+      inputElement.type = 'checkbox';
+      inputElement.id = `${solution.id}-checkbox`;
+      labelElement.htmlFor = `${solution.id}-checkbox`;
+      labelElement.textContent = solution.label;
 
-  //Append li to ul
-  unorderedListElement.appendChild(listItemElement);
+      // Append elements to li
+      listItemElement.appendChild(inputElement);
+      listItemElement.appendChild(labelElement);
 
-  //Add event listener to show/hide matching svg rect
-  inputElement.addEventListener('change', (event) => {
-    svgRect.classList.toggle(HIDE_CLASS_NAME);
+      // Append li to ul
+      unorderedListElement.appendChild(listItemElement);
+
+      // Add event listener to show/hide matching svg rect
+      inputElement.addEventListener('change', () => {
+          svgRect.classList.toggle(HIDE_CLASS_NAME);
+      });
   });
 });

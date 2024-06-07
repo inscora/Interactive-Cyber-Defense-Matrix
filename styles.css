@@ -1,20 +1,25 @@
 .grid {
   display: grid;
-  grid-template-columns: 250px 1fr;
-  gap: 10px;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  padding: 20px;
 }
+
 
 ul li label {
-padding-left: 0.5rem;
-font-family: Arial, Helvetica, sans-serif;
-max-height: 450px;
-overflow-y: scroll;
+  padding-left: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+  display: block;
 }
 
-section{
-width:1489px;
-column-count:5;
-transform:translatex(0px) translatey(460px);
+ul li {
+  margin-bottom: 10px;
+}
+
+section {
+  column-count: 3;
+  column-gap: 20px;
 }
 
 g.hide-solution {
