@@ -21,7 +21,7 @@ section {
   transform: translateX(0px) translateY(460px);
 }
 
-g.hide-solution {
+.hide-solution {
   display: none;
 }
 

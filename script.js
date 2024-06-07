@@ -83,7 +83,7 @@ const SOLUTIONS = [
         inputElement.addEventListener('change', (event) => {
           if (event.target.checked) {
             svgElement.classList.remove(HIDE_CLASS_NAME);
-            svgElement.setAttribute('fill', event.target.value);
+            svgElement.style.fill = event.target.value;
           }
         });
       });
