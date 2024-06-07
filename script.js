@@ -57,6 +57,7 @@ const SOLUTIONS = [
     
     if (svgElement) {
       svgElement.classList.add(HIDE_CLASS_NAME);
+      console.log(`SVG element found for ${solution.id}`);
   
       const listItemElement = document.createElement('li');
       const labelElement = document.createElement('label');
@@ -82,6 +83,7 @@ const SOLUTIONS = [
   
         inputElement.addEventListener('change', (event) => {
           if (event.target.checked) {
+            console.log(`Changing color of ${solution.id} to ${event.target.value}`);
             svgElement.classList.remove(HIDE_CLASS_NAME);
             svgElement.style.fill = event.target.value;
           }
@@ -89,6 +91,8 @@ const SOLUTIONS = [
       });
   
       unorderedListElement.appendChild(listItemElement);
+    } else {
+      console.log(`SVG element not found for ${solution.id}`);
     }
   });
   
