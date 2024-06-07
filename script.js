@@ -53,46 +53,51 @@ const SOLUTIONS = [
   
   SOLUTIONS.forEach(solution => {
     const unorderedListElement = document.getElementById('solution-checkboxes');
-    const svgElement = document.getElementById(solution.id);
+    const svgGroupElement = document.getElementById(solution.id);
     
-    if (svgElement) {
-      svgElement.classList.add(HIDE_CLASS_NAME);
-      console.log(`SVG element found for ${solution.id}`);
+    if (svgGroupElement) {
+      const rectElement = svgGroupElement.querySelector('rect');
+      if (rectElement) {
+        rectElement.classList.add(HIDE_CLASS_NAME);
+        console.log(`Rect element found for ${solution.id}`);
   
-      const listItemElement = document.createElement('li');
-      const labelElement = document.createElement('label');
+        const listItemElement = document.createElement('li');
+        const labelElement = document.createElement('label');
   
-      labelElement.textContent = solution.label;
-      
-      listItemElement.appendChild(labelElement);
+        labelElement.textContent = solution.label;
+        
+        listItemElement.appendChild(labelElement);
   
-      const colors = ['red', 'green', 'blue'];
-      colors.forEach(color => {
-        const inputElement = document.createElement('input');
-        inputElement.setAttribute('type', 'radio');
-        inputElement.setAttribute('name', `${solution.id}-color`);
-        inputElement.setAttribute('id', `${solution.id}-${color}`);
-        inputElement.setAttribute('value', color);
+        const colors = ['red', 'green', 'blue'];
+        colors.forEach(color => {
+          const inputElement = document.createElement('input');
+          inputElement.setAttribute('type', 'radio');
+          inputElement.setAttribute('name', `${solution.id}-color`);
+          inputElement.setAttribute('id', `${solution.id}-${color}`);
+          inputElement.setAttribute('value', color);
   
-        const colorLabel = document.createElement('label');
-        colorLabel.setAttribute('for', `${solution.id}-${color}`);
-        colorLabel.textContent = color;
+          const colorLabel = document.createElement('label');
+          colorLabel.setAttribute('for', `${solution.id}-${color}`);
+          colorLabel.textContent = color;
   
-        listItemElement.appendChild(inputElement);
-        listItemElement.appendChild(colorLabel);
+          listItemElement.appendChild(inputElement);
+          listItemElement.appendChild(colorLabel);
   
-        inputElement.addEventListener('change', (event) => {
-          if (event.target.checked) {
-            console.log(`Changing color of ${solution.id} to ${event.target.value}`);
-            svgElement.classList.remove(HIDE_CLASS_NAME);
-            svgElement.style.fill = event.target.value;
-          }
+          inputElement.addEventListener('change', (event) => {
+            if (event.target.checked) {
+              console.log(`Changing color of ${solution.id} to ${event.target.value}`);
+              rectElement.classList.remove(HIDE_CLASS_NAME);
+              rectElement.setAttribute('fill', event.target.value);
+            }
+          });
         });
-      });
   
-      unorderedListElement.appendChild(listItemElement);
+        unorderedListElement.appendChild(listItemElement);
+      } else {
+        console.log(`Rect element not found for ${solution.id}`);
+      }
     } else {
-      console.log(`SVG element not found for ${solution.id}`);
+      console.log(`SVG group element not found for ${solution.id}`);
     }
   });
   
