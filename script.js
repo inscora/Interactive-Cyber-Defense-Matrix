@@ -26,13 +26,13 @@ const SOLUTIONS = [
     { id: 'ddosTesting', label: 'DDoS Testing' },
     { id: 'pam', label: 'PAM' },
     { id: 'impersonation', label: 'Impersonation' },
-    { id: 'drPlanAndRehearsals', label: 'DR Plan and Rehears' },
+    { id: 'drPlanAndRehearsals', label: 'DR Plan and Rehearsals' },
     { id: 'staffingAndRecruiting', label: 'Staffing and Recruiting' },
     { id: 'attackSurfaceManagement', label: 'Attack Surface Mngmt' },
     { id: 'sse', label: 'SSE' },
     { id: 'soc', label: 'SOC' },
     { id: 'managedGrc', label: 'Managed GRC' },
-    { id: 'managedControlsAssurance', label: "Mng'd Controls Assurance" },
+    { id: 'managedControlsAssurance', label: 'Mng\'d Controls Assurance' },
     { id: 'dataIdAndClassification', label: 'Data ID and Class' },
     { id: 'microsegmentation', label: 'Microsegmentation' },
     { id: 'policyEnforcement', label: 'Policy Enforcement' },
@@ -53,10 +53,10 @@ const SOLUTIONS = [
   
   SOLUTIONS.forEach(solution => {
     const unorderedListElement = document.getElementById('solution-checkboxes');
-    const svgRect = document.getElementById(solution.id);
+    const svgElement = document.getElementById(solution.id);
     
-    if (svgRect) {
-      svgRect.classList.add(HIDE_CLASS_NAME);
+    if (svgElement) {
+      svgElement.classList.add(HIDE_CLASS_NAME);
   
       const listItemElement = document.createElement('li');
       const labelElement = document.createElement('label');
@@ -82,8 +82,8 @@ const SOLUTIONS = [
   
         inputElement.addEventListener('change', (event) => {
           if (event.target.checked) {
-            svgRect.classList.remove(HIDE_CLASS_NAME);
-            svgRect.setAttribute('fill', event.target.value);
+            svgElement.classList.remove(HIDE_CLASS_NAME);
+            svgElement.setAttribute('fill', event.target.value);
           }
         });
       });
