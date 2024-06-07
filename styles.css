@@ -1,41 +1,41 @@
+/* styles.css */
 .grid {
   display: grid;
   grid-template-columns: 250px 1fr;
   gap: 10px;
- justify-content: center;
- align-content: center;
- height: 100vh;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
 }
 
 ul li label {
-padding-left: 0.5rem;
-font-family: Arial, Helvetica, sans-serif;
-max-height: 450px;
-overflow-y: scroll;
+  padding-left: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  max-height: 450px;
+  overflow-y: scroll;
 }
 
-section{
-width:1489px;
-column-count:5;
-transform:translatex(0px) translatey(460px);
+section {
+  width: 1489px;
+  column-count: 5;
+  transform: translateX(0px) translateY(460px);
 }
 
 g.hide-solution {
-display: none;
+  display: none;
 }
+
 body {
-    background-color:#F0FFFF ; 
+  background-color: #F0FFFF;
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;  
+  font-family: 'Montserrat', sans-serif;
 }
-
 
 .montserrat-<uniquifier> {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
-}
 }

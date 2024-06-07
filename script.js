@@ -184,37 +184,43 @@ const SOLUTIONS = [{
     label: 'Tape Backup'
   }
 ];
+
 const HIDE_CLASS_NAME = 'hide-solution';
 
-
 SOLUTIONS.forEach(solution => {
-  //Get ul and svg elements
   const unorderedListElement = document.getElementById('solution-checkboxes');
   const svgRect = document.getElementById(solution.id);
   
-  //hide all svg elements by default
-  svgRect.classList.toggle(HIDE_CLASS_NAME);
+  svgRect.classList.add(HIDE_CLASS_NAME);
 
-  //Create elements per solution id
   const listItemElement = document.createElement('li');
   const labelElement = document.createElement('label');
-  const inputElement = document.createElement('input');
 
-  //Set attributes on elements
-  inputElement.setAttribute('type', 'checkbox');
-  inputElement.setAttribute('id', `${solution.id}-checkbox`);
-  labelElement.setAttribute('for', `${solution.id}-checkbox`);
   labelElement.textContent = solution.label;
+  
+  const colors = ['red', 'green', 'blue'];
+  colors.forEach(color => {
+    const inputElement = document.createElement('input');
+    inputElement.setAttribute('type', 'radio');
+    inputElement.setAttribute('name', `${solution.id}-color`);
+    inputElement.setAttribute('id', `${solution.id}-${color}`);
+    inputElement.setAttribute('value', color);
 
-  //Append elements to li
-  listItemElement.appendChild(inputElement);
-  listItemElement.appendChild(labelElement);
+    const colorLabel = document.createElement('label');
+    colorLabel.setAttribute('for', `${solution.id}-${color}`);
+    colorLabel.textContent = color;
 
-  //Append li to ul
-  unorderedListElement.appendChild(listItemElement);
+    listItemElement.appendChild(inputElement);
+    listItemElement.appendChild(colorLabel);
 
-  //Add event listener to show/hide matching svg rect
-  inputElement.addEventListener('change', (event) => {
-    svgRect.classList.toggle(HIDE_CLASS_NAME);
+    inputElement.addEventListener('change', (event) => {
+      if (event.target.checked) {
+        svgRect.classList.remove(HIDE_CLASS_NAME);
+        svgRect.setAttribute('fill', event.target.value);
+      }
+    });
   });
+
+  listItemElement.appendChild(labelElement);
+  unorderedListElement.appendChild(listItemElement);
 });
