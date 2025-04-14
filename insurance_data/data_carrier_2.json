@@ -46,9 +46,9 @@
   },
   {
     "": "Metadata",
-    "Premium": "$50,002",
+    "Premium": "$40,000",
     "Limit": "$5,000,000",
-    "Exclusions": "Cyber Warfare, Ransomware",
+    "Exclusions": "Cyber Warfare, Ransomware, Governement Fines",
     "Carrier": "Carrier 2"
   }
 ]
