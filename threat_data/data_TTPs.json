@@ -1,0 +1,47 @@
+[
+  {
+    "": "Devices",
+    "Govern": "",
+    "Identify": "T1190,\nT1021",
+    "Protect": "T1059,\nT1055,\nT1055,\nT1036,\nT1190,\nT1047,\nT1087,\nT1059,\nT1003,\nT1021,\nT1105,\nT1106,\nT1059.001,\nT1218.011,\nT1566.002,\nT1562.001,\nT1003.001,\nT1567.002,\nT1566.001",
+    "Detect": "",
+    "Respond": "",
+    "Recover": ""
+  },
+  {
+    "": "Applications",
+    "Govern": "",
+    "Identify": "T1059,\nT1190,\nT1059,\nT1021,\nT1059.001,\nT1566.002",
+    "Protect": "T1078,\nT1078,\nT1078,\nT1078,\nT1190",
+    "Detect": "",
+    "Respond": "",
+    "Recover": ""
+  },
+  {
+    "": "Networks",
+    "Govern": "",
+    "Identify": "",
+    "Protect": "T1078,\nT1078,\nT1078,\nT1078,\nT1190,\nT1071,\nT1021,\nT1105,\nT1071.001,\nT1566.001",
+    "Detect": "",
+    "Respond": "",
+    "Recover": ""
+  },
+  {
+    "": "Data",
+    "Govern": "",
+    "Identify": "",
+    "Protect": "T1003,\nT1003.001",
+    "Detect": "",
+    "Respond": "",
+    "Recover": ""
+  },
+  {
+    "": "Users",
+    "Govern": "T1078,\nT1003,\nT1003.001",
+    "Identify": "T1055,\nT1055,\nT1078,\nT1078,\nT1078,\nT1078,\nT1190,\nT1047,\nT1087,\nT1003,\nT1021,\nT1105,\nT1566.002,\nT1562.001,\nT1003.001",
+    "Protect": "T1078,\nT1078,\nT1078,\nT1036,\nT1078,\nT1003,\nT1566.002,\nT1003.001,\nT1566.001",
+    "Detect": "",
+    "Respond": "",
+    "Recover": ""
+  }
+]

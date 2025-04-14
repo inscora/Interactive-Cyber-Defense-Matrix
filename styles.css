@@ -39,3 +39,80 @@ h1 {
   font-weight: <weight>;
   font-style: normal;
 }
+
+.button-row-container {
+  position: fixed;
+  left: 20px; /* Start from 20px from the left */
+  bottom: 20px; /* Start from 20px from the bottom */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align buttons to the left */
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px; /* Space between buttons horizontally */
+  margin-bottom: 10px; /* Space between rows */
+}
+
+.button-row:last-child {
+  margin-bottom: 0; /* Remove bottom margin from the last row */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Position the info block absolutely to the right of your SVG.
+   Tweak left/top/width/height as needed. */
+
+#infoBlock {
+    position: absolute;
+    top: 420px;   /* Matches your first row’s top, for example */
+    left: 1100px;  /* ~10px more than your final SVG column (726.41041) */
+    width: 220px;
+    height: 444.5px;
+    padding: 10px;
+    box-sizing: border-box;
+  
+    background-color: white;
+    color: black;
+    border: 2px solid black; /* Pink outline for clarity */
+    overflow: hidden; /* or scroll, if you expect more text than 395px high */
+
+  /* Set the desired font family here */
+  font-family: Helvetica, Arial, sans-serif;
+  }
+  
+#infoBlock hr {
+  margin: 5px 0 10px;
+}
+
+/* Each row is displayed as a table row */
+.infoBlockRow {
+  display: table-row;
+}
+
+/* Each piece (label or value) is displayed as a table cell */
+.infoLabel, .infoValue {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 4px;
+  font-size: 14px;
+  /* Any other text styling you want */
+}
+
+/* Label goes on the left */
+.infoLabel {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Value goes on the right */
+.infoValue {
+  text-align: right;
+  font-weight: normal;
+}

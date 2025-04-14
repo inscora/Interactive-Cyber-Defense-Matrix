@@ -1,0 +1,54 @@
+[
+  {
+    "": "Devices",
+    "Govern": "C6-58,\nC6-68,\nC6-70,\nC6-73",
+    "Identify": "C6-96,\nC6-97,\nC6-120,\nC6-122,\nC6-124",
+    "Protect": "C6-WT-9,\nC6-WT-20,\nC6-80,\nC6-81,\nC6-82,\nC6-83,\nC6-94,\nC6-95,\nC6-122,\nC6-124",
+    "Detect": "C6-98,\nC6-115,\nC6-124",
+    "Respond": "C6-109,\nC6-110,\nC6-124",
+    "Recover": "C6-108,\nC6-110,\nC6-111,\nC6-124,\nC6-128,\nC6-129,\nC6-130"
+  },
+  {
+    "": "Applications",
+    "Govern": "C6-58,\nC6-68,\nC6-70,\nC6-73",
+    "Identify": "C6-96,\nC6-97,\nC6-123,\nC6-124,\nC6-126",
+    "Protect": "C6-81,\nC6-82,\nC6-83,\nC6-94,\nC6-95,\nC6-123,\nC6-124,\nC6-126",
+    "Detect": "C6-98,\nC6-115,\nC6-124",
+    "Respond": "C6-109,\nC6-110,\nC6-124",
+    "Recover": "C6-108,\nC6-110,\nC6-111,\nC6-124,\nC6-128,\nC6-129,\nC6-130"
+  },
+  {
+    "": "Networks",
+    "Govern": "C6-58,\nC6-68,\nC6-70,\nC6-73",
+    "Identify": "C6-96,\nC6-97,\nC6-120,\nC6-122,\nC6-124",
+    "Protect": "C6-WT-9,\nC6-79,\nC6-84,\nC6-85,\nC6-90,\nC6-94,\nC6-95,\nC6-122,\nC6-124",
+    "Detect": "C6-98,\nC6-115,\nC6-124",
+    "Respond": "C6-109,\nC6-110,\nC6-124",
+    "Recover": "C6-108,\nC6-110,\nC6-111,\nC6-124,\nC6-128,\nC6-129,\nC6-130"
+  },
+  {
+    "": "Data",
+    "Govern": "C6-58,\nC6-68,\nC6-70,\nC6-73,\nC6-74,\nC6-75,\nC6-105,\nC6-106,\nC6-107",
+    "Identify": "C6-WT-12,\nC6-54,\nC6-55,\nC6-56,\nC6-57,\nC6-59,\nC6-60,\nC6-61,\nC6-97,\nC6-118,\nC6-119,\nC6-127",
+    "Protect": "C6-WT-9,\nC6-63,\nC6-64,\nC6-65,\nC6-66,\nC6-67,\nC6-77,\nC6-86,\nC6-101,\nC6-102,\nC6-103,\nC6-127",
+    "Detect": "C6-98,\nC6-115",
+    "Respond": "C6-109,\nC6-110",
+    "Recover": "C6-91,\nC6-92,\nC6-93,\nC6-108,\nC6-110,\nC6-111,\nC6-118,\nC6-128,\nC6-129,\nC6-130"
+  },
+  {
+    "": "Users",
+    "Govern": "C6-WT-4,\nC6-WT-5,\nC6-WT-6,\nC6-WT-15,\nC6-WT-16,\nC6-WT-17,\nC6-WT-18,\nC6-WT-21,\nC6-WT-26,\nC6-WT-31,\nC6-WT-34,\nC6-58,\nC6-68,\nC6-70,\nC6-72,\nC6-73,\nC6-78,\nC6-112",
+    "Identify": "C6-WT-7,\nC6-WT-8,\nC6-WT-10,\nC6-WT-11,\nC6-WT-13,\nC6-WT-19,\nC6-WT-23,\nC6-WT-24,\nC6-WT-25,\nC6-WT-27,\nC6-WT-28,\nC6-WT-29,\nC6-WT-32,\nC6-WT-34,\nC6-WT-35,\nC6-WT-36,\nC6-WT-37,\nC6-WT-38,\nC6-WT-40,\nC6-MFA-1,\nC6-MFA-2,\nC6-MFA-3,\nC6-MFA-4,\nC6-MFA-5,\nC6-MFA-6,\nC6-62,\nC6-72,\nC6-78,\nC6-87,\nC6-88,\nC6-89,\nC6-100,\nC6-113,\nC6-114,\nC6-124",
+    "Protect": "C6-WT-3,\nC6-WT-9,\nC6-76,\nC6-94,\nC6-95,\nC6-99,\nC6-124",
+    "Detect": "C6-98,\nC6-115,\nC6-124",
+    "Respond": "C6-109,\nC6-110,\nC6-121,\nC6-124",
+    "Recover": "C6-108,\nC6-110,\nC6-111,\nC6-121,\nC6-124"
+  },
+  {
+    "": "Metadata",
+    "Premium": "$50,006",
+    "Limit": "$5,000,000",
+    "Exclusions": "Cyber Warfare, Bodily Injuries",
+    "Carrier": "Carrier 6"
+  }
+]

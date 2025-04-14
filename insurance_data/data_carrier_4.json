@@ -1,0 +1,54 @@
+[
+  {
+    "": "Devices",
+    "Govern": "C4-31,\nC4-35,\nC4-36,\nC4-73",
+    "Identify": "C4-44",
+    "Protect": "C4-42,\nC4-59,\nC4-60,\nC4-61,\nC4-62,\nC4-64",
+    "Detect": "C4-42,\nC4-45,\nC4-47",
+    "Respond": "C4-18,\nC4-23,\nC4-24,\nC4-42,\nC4-45,\nC4-47,\nC4-72",
+    "Recover": "C4-21,\nC4-22"
+  },
+  {
+    "": "Applications",
+    "Govern": "C4-31,\nC4-35,\nC4-36,\nC4-73",
+    "Identify": "",
+    "Protect": "C4-60,\nC4-61",
+    "Detect": "",
+    "Respond": "C4-23,\nC4-24,\nC4-72",
+    "Recover": "C4-21,\nC4-22"
+  },
+  {
+    "": "Networks",
+    "Govern": "C4-31,\nC4-35,\nC4-36,\nC4-73",
+    "Identify": "",
+    "Protect": "C4-41,\nC4-48",
+    "Detect": "",
+    "Respond": "C4-23,\nC4-24,\nC4-72",
+    "Recover": "C4-21,\nC4-22"
+  },
+  {
+    "": "Data",
+    "Govern": "C4-31,\nC4-35,\nC4-36,\nC4-65,\nC4-66,\nC4-67,\nC4-68,\nC4-69,\nC4-70,\nC4-71,\nC4-73,\nC4-75,\nC4-78",
+    "Identify": "C4-52,\nC4-65",
+    "Protect": "C4-28,\nC4-29,\nC4-30,\nC4-49,\nC4-50,\nC4-51,\nC4-69,\nC4-70,\nC4-71,\nC4-74,\nC4-75",
+    "Detect": "",
+    "Respond": "C4-23,\nC4-24,\nC4-72",
+    "Recover": "C4-21,\nC4-22,\nC4-27"
+  },
+  {
+    "": "Users",
+    "Govern": "C4-31,\nC4-35,\nC4-36,\nC4-37,\nC4-38,\nC4-66,\nC4-67,\nC4-68,\nC4-73,\nC4-75,\nC4-76,\nC4-77,\nC4-78",
+    "Identify": "C4-33,\nC4-34,\nC4-39,\nC4-49,\nC4-53,\nC4-54,\nC4-55,\nC4-79,\nC4-80",
+    "Protect": "C4-56,\nC4-57,\nC4-58,\nC4-78",
+    "Detect": "",
+    "Respond": "C4-23,\nC4-24,\nC4-40,\nC4-72",
+    "Recover": "C4-21,\nC4-22"
+  },
+  {
+    "": "Metadata",
+    "Premium": "$50,004",
+    "Limit": "$5,000,000",
+    "Exclusions": "Cyber Warfare, Bodily Injuries, Fines",
+    "Carrier": "Carrier 4"
+  }
+]

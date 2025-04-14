@@ -1,0 +1,54 @@
+[
+  {
+    "": "Devices",
+    "Govern": "C5-14,\nC5-15,\nC5-2,\nC5-3,\nC5-7,\nC5-12,\nC5-13,\nC5-21,\nC5-15,\nC5-3,\nC5-6,\nC5-2,\nC5-17",
+    "Identify": "C5-12,\nC5-13,\nC5-34,\nC5-5,\nC5-7,\nC5-1,\nC5-3,\nC5-4,\nC5-10,\nC5-11,\nC5-12,\nC5-4,\nC5-7,\nC5-11,\nC5-4,\nC5-5,\nC5-12",
+    "Protect": "C5-8,\nC5-9,\nC5-3,\nC5-7,\nC5-10,\nC5-13,\nC5-15,\nC5-16,\nC5-17,\nC5-20,\nC5-22,\nC5-23,\nC5-27,\nC5-37,\nC5-38,\nC5-17,\nC5-4,\nC5-6,\nC5-9,\nC5-11,\nC5-12,\nC5-2,\nC5-5,\nC5-6,\nC5-7,\nC5-8,\nC5-9,\nC5-15,\nC5-16,\nC5-1,\nC5-5,\nC5-6,\nC5-9,\nC5-1,\nC5-12,\nC5-13,\nC5-16",
+    "Detect": "C5-18,\nC5-19,\nC5-22,\nC5-29,\nC5-30,\nC5-31,\nC5-32,\nC5-33,\nC5-39,\nC5-14",
+    "Respond": "C5-10,\nC5-18,\nC5-19,\nC5-22,\nC5-32,\nC5-33",
+    "Recover": "C5-1,\nC5-2,\nC5-5,\nC5-12,\nC5-8,\nC5-9"
+  },
+  {
+    "": "Applications",
+    "Govern": "C5-14,\nC5-15,\nC5-2,\nC5-3,\nC5-7,\nC5-12,\nC5-13,\nC5-3,\nC5-6",
+    "Identify": "C5-34,\nC5-35,\nC5-1,\nC5-3,\nC5-4,\nC5-10,\nC5-12,\nC5-4,\nC5-7,\nC5-11,\nC5-12",
+    "Protect": "C5-1,\nC5-3,\nC5-11,\nC5-17,\nC5-2,\nC5-5,\nC5-6,\nC5-7,\nC5-8,\nC5-9,\nC5-10,\nC5-12",
+    "Detect": "C5-29,\nC5-30,\nC5-31,\nC5-32,\nC5-33,\nC5-39,\nC5-14",
+    "Respond": "C5-10,\nC5-32,\nC5-33,\nC5-43",
+    "Recover": "C5-1,\nC5-2,\nC5-5,\nC5-8,\nC5-9"
+  },
+  {
+    "": "Networks",
+    "Govern": "C5-14,\nC5-15,\nC5-2,\nC5-3,\nC5-7,\nC5-12,\nC5-13,\nC5-3,\nC5-6,\nC5-11",
+    "Identify": "C5-1,\nC5-34,\nC5-41,\nC5-10,\nC5-9",
+    "Protect": "C5-3,\nC5-4,\nC5-5,\nC5-6,\nC5-8,\nC5-10,\nC5-15,\nC5-36,\nC5-40,\nC5-17,\nC5-42,\nC5-14,\nC5-15,\nC5-16,\nC5-6,\nC5-7,\nC5-8,\nC5-10,\nC5-13",
+    "Detect": "C5-29,\nC5-30,\nC5-31,\nC5-32,\nC5-33,\nC5-39,\nC5-14",
+    "Respond": "C5-10,\nC5-32,\nC5-33,\nC5-43",
+    "Recover": "C5-1,\nC5-2,\nC5-5,\nC5-8,\nC5-9"
+  },
+  {
+    "": "Data",
+    "Govern": "C5-8,\nC5-9,\nC5-10,\nC5-11,\nC5-14,\nC5-15,\nC5-2,\nC5-3,\nC5-7,\nC5-11,\nC5-12,\nC5-13,\nC5-14,\nC5-15,\nC5-16,\nC5-4,\nC5-3,\nC5-6",
+    "Identify": "C5-1,\nC5-2,\nC5-3,\nC5-4,\nC5-5,\nC5-9,\nC5-10,\nC5-12,\nC5-13,\nC5-14,\nC5-2,\nC5-34,\nC5-13,\nC5-7,\nC5-8,\nC5-10,\nC5-4,\nC5-7,\nC5-11",
+    "Protect": "C5-16,\nC5-17,\nC5-18,\nC5-19,\nC5-17,\nC5-3,\nC5-14,\nC5-25,\nC5-6,\nC5-7,\nC5-8,\nC5-9,\nC5-13,\nC5-14,\nC5-10",
+    "Detect": "C5-29,\nC5-30,\nC5-31,\nC5-32,\nC5-33,\nC5-39,\nC5-14",
+    "Respond": "C5-10,\nC5-11,\nC5-32,\nC5-33",
+    "Recover": "C5-1,\nC5-2,\nC5-3,\nC5-4,\nC5-5,\nC5-12,\nC5-8,\nC5-9,\nC5-15"
+  },
+  {
+    "": "Users",
+    "Govern": "C5-6,\nC5-7,\nC5-8,\nC5-9,\nC5-14,\nC5-15,\nC5-1,\nC5-2,\nC5-3,\nC5-7,\nC5-12,\nC5-13,\nC5-15,\nC5-16,\nC5-18,\nC5-3,\nC5-4,\nC5-1,\nC5-2,\nC5-3,\nC5-6,\nC5-10,\nC5-3",
+    "Identify": "C5-4,\nC5-5,\nC5-4,\nC5-8,\nC5-1,\nC5-2,\nC5-3,\nC5-4,\nC5-5,\nC5-6,\nC5-7,\nC5-8,\nC5-9,\nC5-2,\nC5-15,\nC5-24,\nC5-34,\nC5-3,\nC5-5,\nC5-7,\nC5-2,\nC5-11,\nC5-15,\nC5-1,\nC5-4,\nC5-7,\nC5-11,\nC5-10",
+    "Protect": "C5-5,\nC5-6,\nC5-24,\nC5-17,\nC5-3,\nC5-4,\nC5-5,\nC5-16",
+    "Detect": "C5-26,\nC5-29,\nC5-30,\nC5-31,\nC5-32,\nC5-33,\nC5-39,\nC5-8,\nC5-10,\nC5-14",
+    "Respond": "C5-10,\nC5-12",
+    "Recover": "C5-1,\nC5-2,\nC5-8,\nC5-9"
+  },
+  {
+    "": "Metadata",
+    "Premium": "$50,005",
+    "Limit": "$5,000,000",
+    "Exclusions": "Cyber Warfare",
+    "Carrier": "Carrier 5"
+  }
+]

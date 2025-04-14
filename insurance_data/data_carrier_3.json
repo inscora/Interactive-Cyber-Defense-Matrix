@@ -1,0 +1,54 @@
+[
+  {
+    "": "Devices",
+    "Govern": "C3-25,\nC3-47,\nC3-48,\nC3-109,\nC3-68,\nC3-88",
+    "Identify": "C3-18,\nC3-21,\nC3-65",
+    "Protect": "C3-25,\nC3-35,\nC3-36,\nC3-37,\nC3-42,\nC3-44,\nC3-46,\nC3-65,\nC3-66",
+    "Detect": "C3-45,\nC3-46",
+    "Respond": "C3-45",
+    "Recover": ""
+  },
+  {
+    "": "Applications",
+    "Govern": "C3-25,\nC3-109,\nC3-68,\nC3-88",
+    "Identify": "C3-19,\nC3-20,\nC3-21,\nC3-22",
+    "Protect": "C3-43,\nC3-66",
+    "Detect": "",
+    "Respond": "",
+    "Recover": ""
+  },
+  {
+    "": "Networks",
+    "Govern": "C3-60,\nC3-109,\nC3-68,\nC3-88",
+    "Identify": "C3-58",
+    "Protect": "C3-23,\nC3-24,\nC3-25,\nC3-39,\nC3-40,\nC3-50,\nC3-54,\nC3-55,\nC3-56,\nC3-57,\nC3-59",
+    "Detect": "",
+    "Respond": "",
+    "Recover": ""
+  },
+  {
+    "": "Data",
+    "Govern": "C3-109,\nC3-112,\nC3-110,\nC3-68,\nC3-87,\nC3-88",
+    "Identify": "C3-14,\nC3-110,\nC3-84,\nC3-85,\nC3-86",
+    "Protect": "C3-29,\nC3-30,\nC3-31,\nC3-32,\nC3-33,\nC3-41,\nC3-49,\nC3-51,\nC3-52,\nC3-53,\nC3-111",
+    "Detect": "",
+    "Respond": "C3-74",
+    "Recover": "C3-28"
+  },
+  {
+    "": "Users",
+    "Govern": "C3-67,\nC3-109,\nC3-112,\nC3-68,\nC3-76,\nC3-77,\nC3-78,\nC3-88",
+    "Identify": "C3-61,\nC3-62,\nC3-63,\nC3-67,\nC3-111,\nC3-69,\nC3-70,\nC3-71,\nC3-72,\nC3-95,\nC3-97",
+    "Protect": "C3-75,\nC3-76,\nC3-77,\nC3-78,\nC3-79,\nC3-81,\nC3-83,\nC3-93",
+    "Detect": "",
+    "Respond": "C3-64",
+    "Recover": "C3-64"
+  },
+  {
+    "": "Metadata",
+    "Premium": "$50,003",
+    "Limit": "$5,000,000",
+    "Exclusions": "Cyber Warfare, Bodily Injuries, Fines",
+    "Carrier": "Carrier 3"
+  }
+]
