@@ -1,17 +1,24 @@
 /* styles.css */
-.grid {
-  display: grid;
-  grid-template-columns: 250px 1fr;
-  gap: 10px;
-  justify-content: center;
-  align-content: center;
-  height: 100vh;
+#mainContainer {
+  max-width: 1200px;  /* Adjust as needed */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#checkboxContainer {
+  margin-bottom: 10px;
+  text-align: left;
+  width: 100%;
 }
 
 ul li label {
   padding-left: 0.5rem;
+  list-style: none;
   font-family: Arial, Helvetica, sans-serif;
   max-height: 450px;
+  vertical-align: top;
   overflow-y: scroll;
 }
 
@@ -41,7 +48,6 @@ h1 {
 }
 
 .button-row-container {
-  position: fixed;
   left: 20px; /* Start from 20px from the left */
   bottom: 20px; /* Start from 20px from the bottom */
   display: flex;
@@ -66,27 +72,29 @@ button {
   cursor: pointer;
 }
 
-/* Position the info block absolutely to the right of your SVG.
-   Tweak left/top/width/height as needed. */
+/* Container for the SVG and info block */
+#gridContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* top-align items */
+  gap: 10px;  /* 10px space between the SVG and the info block */
+  /* Optionally, you can center it horizontally */
+  margin: 0 auto;
+}
 
+/* Info block positioned exactly 10px to the right of the grid */
 #infoBlock {
-    position: absolute;
-    top: 420px;   /* Matches your first row’s top, for example */
-    left: 1100px;  /* ~10px more than your final SVG column (726.41041) */
-    width: 220px;
-    height: 444.5px;
-    padding: 10px;
-    box-sizing: border-box;
+  width: 220px;
+  height: 444.5px;  /* Match the SVG's height */
+  padding: 10px;
+  box-sizing: border-box;
   
-    background-color: white;
-    color: black;
-    border: 2px solid black; /* Pink outline for clarity */
-    overflow: hidden; /* or scroll, if you expect more text than 395px high */
-
-  /* Set the desired font family here */
+  background-color: white;
+  color: black;
+  border: 2px solid black;  /* adjust border as desired */
   font-family: Helvetica, Arial, sans-serif;
-  }
-  
+}
+
 #infoBlock hr {
   margin: 5px 0 10px;
 }
