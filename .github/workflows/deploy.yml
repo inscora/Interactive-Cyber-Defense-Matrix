@@ -1,0 +1,35 @@
+name: Deploy apps
+
+on:
+  workflow_call:
+    inputs:
+      environment:
+        type: string
+
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
+  
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT }}:role/${{ secrets.ASSUME_ROLE_NAME }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Deploy to S3
+        run: |
+          aws s3 sync build/cdm s3://${{ secrets.S3_BUCKET_CYBERDEFENSEMATRIX }} --delete
+          
+
+      - name: Invalidate CloudFront (optional)
+        run: |
+            aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_CYBERDEFENSE_MATRIX }} --paths "/*"
+          

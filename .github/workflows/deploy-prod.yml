@@ -1,0 +1,17 @@
+name: Build & Deploy SPAs to S3 (production)
+
+on:
+  workflow_dispatch: # Allows manual triggers
+  
+
+permissions:
+  actions: write
+  contents: read
+  id-token: write
+
+jobs:
+  deploy:
+    uses: ./.github/workflows/deploy.yml
+    secrets: inherit
+    with:
+      environment: production
