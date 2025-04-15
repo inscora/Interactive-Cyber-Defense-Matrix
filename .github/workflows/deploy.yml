@@ -26,7 +26,7 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          aws s3 sync ./ s3://${{ secrets.S3_BUCKET_CYBERDEFENSEMATRIX }} --exclude "*" --include "*" --delete
+          aws s3 sync ./ s3://${{ secrets.S3_BUCKET_CYBERDEFENSEMATRIX }} --exclude ".git" --exclude ".github" --delete
           
 
       - name: Invalidate CloudFront (optional)
