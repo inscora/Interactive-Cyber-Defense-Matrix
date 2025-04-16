@@ -120,7 +120,7 @@ const SOLUTIONS = [
           updateMaxCount(data); // Recalculate maxCount for the new dataset
 
           const totalQ = getTotalQuestions(data); // Get total number of questions.
-          console.log("Unique Questions Count:", totalQ);
+          //console.log("Unique Questions Count:", totalQ);
 
           document.getElementById('textQuestions').textContent = totalQ;
 
@@ -132,11 +132,11 @@ const SOLUTIONS = [
                   // get the first 3 letters, cap them and get the corresponding rect
                   if(key === ""){ // first is empty its the row ID
                     prefix = value.substring(0,3).toUpperCase();
-                    console.log(prefix);
+                    //console.log(prefix);
                   } else {
                     suffix = key.substring(0,3).toUpperCase();
                   }
-                  console.log(prefix+suffix)
+                  //console.log(prefix+suffix)
                   // Find all rectangles whose ID starts with the current prefix
                   document.querySelectorAll(`rect[id^="${prefix}${suffix}"]`).forEach(rect => {
 
@@ -184,10 +184,10 @@ const SOLUTIONS = [
                 const exclusions = metadataRow.Exclusions; // e.g. "Cyber Warfare, Ransomware"
                 const carrier = metadataRow.Carrier; // e.g. "Carrier 1"
 
-                console.log("Metadata Premium:", premium);
-                console.log("Metadata Limit:", limit);
-                console.log("Metadata Exclusions:", exclusions);
-                console.log("Carrier Name:", carrier);
+               //console.log("Metadata Premium:", premium);
+               //console.log("Metadata Limit:", limit);
+               // console.log("Metadata Exclusions:", exclusions);
+               // console.log("Carrier Name:", carrier);
 
                 // Update the side block and make it visible
                 document.getElementById('textPremium').textContent = premium;
