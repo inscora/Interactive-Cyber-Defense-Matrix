@@ -1,10 +1,11 @@
 /* styles.css */
 #mainContainer {
-  max-width: 1200px;  /* Adjust as needed */
+  max-width: 1200px; /* Adjust as needed */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 60px;
 }
 
 #checkboxContainer {
@@ -25,7 +26,7 @@ ul li label {
 section {
   width: 1489px;
   column-count: 5;
-  transform: translateX(0px) translateY(460px);
+  /* transform: translateX(0px) translateY(460px); <--- the culpitre */
 }
 
 .hide-solution {
@@ -33,14 +34,14 @@ section {
 }
 
 body {
-  background-color: #F0FFFF;
+  background-color: #f0ffff;
 }
 
 h1 {
   font-family: "Poppins", Sans-serif;
 }
 
-.montserrat-<uniquifier> {
+.montserrat-<uniquifier > {
   font-family: "Poppins", Sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
@@ -78,22 +79,28 @@ button {
   display: flex;
   flex-direction: row;
   align-items: flex-start; /* top-align items */
-  gap: 10px;  /* 10px space between the SVG and the info block */
+  gap: 10px; /* 10px space between the SVG and the info block */
   /* Optionally, you can center it horizontally */
   margin: 0 auto;
+  width: 100%;
+}
+
+#gridContainer svg {
+  margin-left: auto;
 }
 
 /* Info block positioned exactly 10px to the right of the grid */
 #infoBlock {
   width: 220px;
-  height: 444.5px;  /* Match the SVG's height */
+  height: 444.5px; /* Match the SVG's height */
   padding: 10px;
   box-sizing: border-box;
-  
+
   background-color: white;
   color: black;
-  border: 2px solid black;  /* adjust border as desired */
+  border: 2px solid black; /* adjust border as desired */
   font-family: "Poppins", Sans-serif;
+  margin-right: auto;
 }
 
 #infoBlock hr {
@@ -106,7 +113,8 @@ button {
 }
 
 /* Each piece (label or value) is displayed as a table cell */
-.infoLabel, .infoValue {
+.infoLabel,
+.infoValue {
   display: table-cell;
   vertical-align: middle;
   padding: 4px;
