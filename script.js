@@ -348,7 +348,6 @@ const SOLUTIONS = [
   document.querySelector('.toggle-ALL-dataset-btn').addEventListener('click', () => {
     combineJSON(carrierFilePaths)
       .then(mergedBlobUrl => {
-        button.onclick = null;
         currentDataset = mergedBlobUrl;
         loadAndDisplayData(currentDataset);
       })
