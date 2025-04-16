@@ -16,7 +16,7 @@
 ul li label {
   padding-left: 0.5rem;
   list-style: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Sans-serif;
   max-height: 450px;
   vertical-align: top;
   overflow-y: scroll;
@@ -37,11 +37,11 @@ body {
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Poppins", Sans-serif;
 }
 
 .montserrat-<uniquifier> {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", Sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
@@ -70,6 +70,7 @@ button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  font-family: "Poppins", Sans-serif;
 }
 
 /* Container for the SVG and info block */
@@ -92,7 +93,7 @@ button {
   background-color: white;
   color: black;
   border: 2px solid black;  /* adjust border as desired */
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Poppins", Sans-serif;
 }
 
 #infoBlock hr {
