@@ -1,0 +1,47 @@
+[
+  {
+    "": "Devices",
+    "Govern": "",
+    "Identify": "C8-51,C8-90",
+    "Protect": "C8-29,C8-31,C8-32,C8-33,C8-43,C8-44,C8-50,C8-51,C8-53,C8-54,C8-55",
+    "Detect": "C8-44,C8-45,C8-46",
+    "Respond": "C8-44,C8-45,C8-52",
+    "Recover": "C8-41"
+  },
+  {
+    "": "Applications",
+    "Govern": "",
+    "Identify": "C8-47",
+    "Protect": "C8-53",
+    "Detect": "C8-45,C8-46",
+    "Respond": "C8-45,C8-52",
+    "Recover": ""
+  },
+  {
+    "": "Networks",
+    "Govern": "",
+    "Identify": "C8-00,C8-56",
+    "Protect": "C8-48,C8-49,C8-65,C8-66,C8-67,C8-68",
+    "Detect": "C8-45,C8-46",
+    "Respond": "C8-45,C8-52",
+    "Recover": ""
+  },
+  {
+    "": "Data",
+    "Govern": "",
+    "Identify": "C8-00,C8-19,C8-20,C8-21,C8-22,C8-23,C8-40,C8-57,C8-59",
+    "Protect": "C8-37,C8-39,C8-58,C8-67,C8-68",
+    "Detect": "C8-45,C8-46",
+    "Respond": "C8-45,C8-52",
+    "Recover": "C8-35,C8-38,C8-41"
+  },
+  {
+    "": "Users",
+    "Govern": "C8-00,C8-11,C8-34,C8-63",
+    "Identify": "C8-00,C8-22,C8-24,C8-25,C8-27,C8-51,C8-64,C8-67,C8-68",
+    "Protect": "C8-28,C8-33,C8-34,C8-63",
+    "Detect": "C8-45,C8-46",
+    "Respond": "C8-29,C8-52",
+    "Recover": ""
+  }
+]

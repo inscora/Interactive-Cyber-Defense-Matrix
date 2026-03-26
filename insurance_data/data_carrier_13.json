@@ -1,0 +1,47 @@
+[
+  {
+    "": "Devices",
+    "Govern": "",
+    "Identify": "",
+    "Protect": "C13-00,C13-19,C13-22,C13-25,C13-28",
+    "Detect": "",
+    "Respond": "",
+    "Recover": "C13-24"
+  },
+  {
+    "": "Applications",
+    "Govern": "",
+    "Identify": "",
+    "Protect": "C13-00,C13-22,C13-25",
+    "Detect": "",
+    "Respond": "",
+    "Recover": ""
+  },
+  {
+    "": "Networks",
+    "Govern": "",
+    "Identify": "",
+    "Protect": "C13-27",
+    "Detect": "",
+    "Respond": "",
+    "Recover": ""
+  },
+  {
+    "": "Data",
+    "Govern": "C13-30",
+    "Identify": "C13-00,C13-15",
+    "Protect": "C13-21,C13-23",
+    "Detect": "",
+    "Respond": "",
+    "Recover": "C13-18,C13-24"
+  },
+  {
+    "": "Users",
+    "Govern": "C13-30,C13-31,C13-32",
+    "Identify": "C13-00,C13-17,C13-20,C13-26,C13-31",
+    "Protect": "C13-30,C13-32",
+    "Detect": "",
+    "Respond": "",
+    "Recover": ""
+  }
+]

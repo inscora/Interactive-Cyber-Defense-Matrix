@@ -2,53 +2,46 @@
   {
     "": "Devices",
     "Govern": "",
-    "Identify": "C1-2,\nC1-3,\nC1-49,\nC1-50",
-    "Protect": "C1-16,\nC1-23,\nC1-24,\nC1-31,\nC1-33,\nC1-35,\nC1-41,\nC1-48,\nC1-54,\nC1-63",
-    "Detect": "C1-17,\nC1-18,\nC1-19,\nC1-20,\nC1-38,\nC1-60",
-    "Respond": "C1-17,\nC1-18,\nC1-19,\nC1-20,\nC1-57",
-    "Recover": "C1-12,\nC1-14"
+    "Identify": "C1-24,C1-25,C1-28,C1-29,C1-48,C1-71,C1-72",
+    "Protect": "C1-40,C1-41,C1-43,C1-44,C1-49,C1-56,C1-57,C1-59,C1-60,C1-66,C1-71,C1-72",
+    "Detect": "C1-42,C1-43,C1-45,C1-46,C1-61,C1-63,C1-71,C1-72",
+    "Respond": "C1-42,C1-45,C1-46,C1-71",
+    "Recover": "C1-38"
   },
   {
     "": "Applications",
     "Govern": "",
-    "Identify": "C1-39,\nC1-49,\nC1-50",
-    "Protect": "C1-23,\nC1-24,\nC1-33,\nC1-41,\nC1-62",
-    "Detect": "C1-38,\nC1-60",
-    "Respond": "C1-57",
+    "Identify": "C1-28,C1-29,C1-48,C1-64,C1-65,C1-71,C1-72",
+    "Protect": "C1-49,C1-66,C1-71,C1-72",
+    "Detect": "C1-61,C1-63,C1-71,C1-72",
+    "Respond": "C1-71",
     "Recover": ""
   },
   {
     "": "Networks",
     "Govern": "",
-    "Identify": "C1-50",
-    "Protect": "C1-22,\nC1-24,\nC1-40,\nC1-55,\nC1-58,\nC1-59,\nC1-61",
-    "Detect": "C1-36,\nC1-38,\nC1-53,\nC1-60",
-    "Respond": "C1-53,\nC1-57",
+    "Identify": "C1-71",
+    "Protect": "C1-33,C1-47,C1-49,C1-52,C1-61,C1-65,C1-71,C1-72",
+    "Detect": "C1-61,C1-63,C1-71,C1-72",
+    "Respond": "C1-71",
     "Recover": ""
   },
   {
     "": "Data",
     "Govern": "",
-    "Identify": "C1-8,\nC1-50",
-    "Protect": "C1-9,\nC1-10,\nC1-11,\nC1-13,\nC1-15,\nC1-51,\nC1-52",
-    "Detect": "C1-38,\nC1-60",
-    "Respond": "C1-57",
-    "Recover": "C1-11,\nC1-12,\nC1-14"
+    "Identify": "C1-28,C1-31,C1-32,C1-35,C1-71",
+    "Protect": "C1-33,C1-34,C1-37,C1-39,C1-71,C1-72",
+    "Detect": "C1-61,C1-63,C1-71,C1-72",
+    "Respond": "C1-71",
+    "Recover": "C1-35,C1-36,C1-38,C1-39"
   },
   {
     "": "Users",
-    "Govern": "",
-    "Identify": "C1-26,\nC1-27,\nC1-28,\nC1-29,\nC1-30,\nC1-34,\nC1-44,\nC1-45,\nC1-50",
-    "Protect": "C1-24,\nC1-33,\nC1-34,\nC1-46,\nC1-56",
-    "Detect": "C1-34,\nC1-38,\nC1-60",
-    "Respond": "C1-57",
+    "Govern": "C1-15,C1-16,C1-17,C1-18,C1-70",
+    "Identify": "C1-28,C1-31,C1-51,C1-53,C1-54,C1-55,C1-59,C1-60,C1-68,C1-69,C1-71,C1-72",
+    "Protect": "C1-49,C1-59,C1-70,C1-71",
+    "Detect": "C1-59,C1-61,C1-63,C1-71,C1-72",
+    "Respond": "C1-71",
     "Recover": ""
-  },
-  {
-    "": "Metadata",
-    "Premium": "$75,000",
-    "Limit": "$5,000,000",
-    "Exclusions": "Cyber Warfare",
-    "Carrier": "Carrier 1"
   }
 ]

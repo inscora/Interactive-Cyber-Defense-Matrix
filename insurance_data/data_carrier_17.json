@@ -1,0 +1,47 @@
+[
+  {
+    "": "Devices",
+    "Govern": "",
+    "Identify": "",
+    "Protect": "C17-14,C17-15,C17-16,C17-17,C17-5",
+    "Detect": "C17-4,C17-5",
+    "Respond": "C17-4",
+    "Recover": "C17-2"
+  },
+  {
+    "": "Applications",
+    "Govern": "",
+    "Identify": "",
+    "Protect": "C17-14,C17-15",
+    "Detect": "",
+    "Respond": "",
+    "Recover": ""
+  },
+  {
+    "": "Networks",
+    "Govern": "",
+    "Identify": "",
+    "Protect": "C17-10,C17-11",
+    "Detect": "",
+    "Respond": "",
+    "Recover": ""
+  },
+  {
+    "": "Data",
+    "Govern": "C17-20",
+    "Identify": "C17-16,C17-17,C17-18",
+    "Protect": "C17-15,C17-19,C17-3",
+    "Detect": "",
+    "Respond": "",
+    "Recover": "C17-1,C17-19,C17-2"
+  },
+  {
+    "": "Users",
+    "Govern": "C17-20,C17-31",
+    "Identify": "C17-32,C17-33,C17-34,C17-35,C17-7,C17-9",
+    "Protect": "C17-20",
+    "Detect": "",
+    "Respond": "",
+    "Recover": ""
+  }
+]

@@ -119,11 +119,6 @@ const SOLUTIONS = [
 
         updateMaxCount(data); // Recalculate maxCount for the new dataset
 
-        const totalQ = getTotalQuestions(data); // Get total number of questions.
-        //console.log("Unique Questions Count:", totalQ);
-
-        document.getElementById('textQuestions').textContent = totalQ;
-
           data.forEach(row => {
             let prefix = "";
             let suffix = "";
@@ -173,41 +168,6 @@ const SOLUTIONS = [
               });
           });
 
-          if (datasetName != "threat_data/data_TTPs.json") { // Update metadata only for Threat TTPs
-
-            const metadataRow = data.find(row => row[""] === "Metadata");
-
-            // If found, grab the fields you need
-            if (metadataRow) {
-              const premium = metadataRow.Premium;   // e.g. "50001"
-              const limit = metadataRow.Limit;       // e.g. "5000000"
-              const exclusions = metadataRow.Exclusions; // e.g. "Cyber Warfare, Ransomware"
-              const carrier = metadataRow.Carrier; // e.g. "Carrier 1"
-
-             //console.log("Metadata Premium:", premium);
-             //console.log("Metadata Limit:", limit);
-             // console.log("Metadata Exclusions:", exclusions);
-             // console.log("Carrier Name:", carrier);
-
-              // Update the side block and make it visible
-              document.getElementById('textPremium').textContent = premium;
-              document.getElementById('textLimit').textContent = limit;
-              document.getElementById('textExclusions').textContent = exclusions;
-              document.getElementById('textCarrierName').textContent = carrier;
-
-            } else {
-              console.log("No metadata row found.");
-            }
-
-        } else { // Clear the side block for Threat TTPs
-          
-            document.getElementById('textPremium').textContent = 'N/A';
-            document.getElementById('textLimit').textContent = 'N/A';
-            document.getElementById('textExclusions').textContent = 'N/A';
-            document.getElementById('textCarrierName').textContent = "Threats TTPs";
-            document.getElementById('textQuestions').textContent = 'N/A';
-
-        }
 
       })
       .catch(error => console.error('Error loading data:', error));
@@ -279,14 +239,6 @@ const SOLUTIONS = [
         const rowID = row[""]; // The row ID is stored under the empty-string key
         // Skip if no row ID OR if row is "Metadata"
         if (!rowID || rowID === "Metadata") {
-          // Set to NA.
-          
-          // Clear the side block
-          document.getElementById('textPremium').textContent = "N/A";
-          document.getElementById('textLimit').textContent = "N/A";
-          document.getElementById('textExclusions').textContent = "N/A";
-          document.getElementById('textCarrierName').textContent = "ALL Carriers";
-
           continue;
         }
   
@@ -328,6 +280,22 @@ const SOLUTIONS = [
     'insurance_data/data_carrier_4.json',
     'insurance_data/data_carrier_5.json',
     'insurance_data/data_carrier_6.json',
+    'insurance_data/data_carrier_7.json',
+    'insurance_data/data_carrier_8.json',
+    'insurance_data/data_carrier_9.json',
+    'insurance_data/data_carrier_10.json',
+    'insurance_data/data_carrier_11.json',
+    'insurance_data/data_carrier_12.json',
+    'insurance_data/data_carrier_13.json',
+    'insurance_data/data_carrier_14.json',
+    'insurance_data/data_carrier_15.json',
+    'insurance_data/data_carrier_16.json',
+    'insurance_data/data_carrier_17.json',
+    'insurance_data/data_carrier_18.json',
+    'insurance_data/data_carrier_19.json',
+    'insurance_data/data_carrier_20.json',
+    'insurance_data/data_carrier_21.json',
+    'insurance_data/data_carrier_22.json',
   ];
 
   // Dynamically wire up each carrier button
@@ -370,7 +338,7 @@ const SOLUTIONS = [
     maxCount = 0; // Reset for the new dataset
     data.forEach(row => {
       Object.values(row).forEach(value => {
-        const count = (value.match(/\n/g) || []).length + 1;
+        const count = (value.match(/\d+/)? ((value.match(/,/g) || []).length + 1) : 0);
         maxCount = Math.max(maxCount, count);
       });
     });
@@ -447,41 +415,5 @@ const SOLUTIONS = [
     }
   }
 
-  function getTotalQuestions(data) {
-    const uniqueCodes = new Set();
-  
-    data.forEach(row => {
-      // Skip the row if its "" field is "Metadata"
-      if (row[""] === "Metadata") {
-        return;
-      }
-      
-      // For each column except the row ID (""), parse codes
-      Object.entries(row).forEach(([key, value]) => {
-        if (key === "") {
-          // This is just the row label ("Devices", "Applications", etc.)
-          return;
-        }
-        if (typeof value !== "string") {
-          // If it's not a string (maybe empty or other data), skip
-          return;
-        }
-  
-        // Split on commas to get individual codes (trim to remove newlines/spaces)
-        const codes = value.split(",").map(code => code.trim());
-        codes.forEach(code => {
-          // If there's a non-empty code, add to our set
-          if (code) {
-            uniqueCodes.add(code);
-          }
-        });
-      });
-    });
-  
-    // Number of unique codes (C1-2, C1-3, etc.)
-    return uniqueCodes.size;
-  }
-
-  
   // Load initial dataset
   clearDataset();

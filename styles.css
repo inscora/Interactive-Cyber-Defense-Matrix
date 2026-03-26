@@ -1,135 +1,170 @@
-/* styles.css */
+/* styles.css — Interactive Cyber Defense Matrix */
+
+/* ── Reset & base ────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 24px;
+  background-color: #0f1117;
+  color: #e2e4e9;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ── Main layout ─────────────────────────────────────── */
 #mainContainer {
-  max-width: 1200px; /* Adjust as needed */
+  max-width: 1100px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 60px;
+  gap: 28px;
 }
 
-#checkboxContainer {
-  margin-bottom: 10px;
-  text-align: left;
-  width: 100%;
-}
-
-ul li label {
-  padding-left: 0.5rem;
-  list-style: none;
-  font-family: "Poppins", Sans-serif;
-  max-height: 450px;
-  vertical-align: top;
-  overflow-y: scroll;
-}
-
-section {
-  width: 1489px;
-  column-count: 5;
-  /* transform: translateX(0px) translateY(460px); <--- the culpitre */
-}
-
-.hide-solution {
-  display: none;
-}
-
-body {
-  background-color: #f0ffff;
-}
-
-h1 {
-  font-family: "Poppins", Sans-serif;
-}
-
-.montserrat-<uniquifier > {
-  font-family: "Poppins", Sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-.button-row-container {
-  left: 20px; /* Start from 20px from the left */
-  bottom: 20px; /* Start from 20px from the bottom */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Align buttons to the left */
-}
-
-.button-row {
-  display: flex;
-  flex-direction: row;
-  gap: 10px; /* Space between buttons horizontally */
-  margin-bottom: 10px; /* Space between rows */
-}
-
-.button-row:last-child {
-  margin-bottom: 0; /* Remove bottom margin from the last row */
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  font-family: "Poppins", Sans-serif;
-}
-
-/* Container for the SVG and info block */
+/* ── SVG grid container ──────────────────────────────── */
 #gridContainer {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start; /* top-align items */
-  gap: 10px; /* 10px space between the SVG and the info block */
-  /* Optionally, you can center it horizontally */
-  margin: 0 auto;
+  justify-content: center;
   width: 100%;
 }
 
 #gridContainer svg {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+}
+
+/* ── Controls panel (buttons) ────────────────────────── */
+#controlsPanel {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Meta buttons row */
+.meta-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Carrier grid — 6 columns, equal-width cells */
+.carrier-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+}
+
+/* ── Button styles ───────────────────────────────────── */
+button {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  transition: background-color 0.15s, border-color 0.15s, transform 0.1s;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Meta buttons (All Carriers, Threats TTPs) */
+.btn-meta {
+  padding: 9px 22px;
+  background-color: #1e2130;
+  color: #c8cad0;
+  border-color: #2e3146;
+}
+.btn-meta:hover {
+  background-color: #292d42;
+  border-color: #4e5270;
+  color: #fff;
+}
+
+/* Threats button accent */
+.btn-threats {
+  background-color: #2a1520;
+  border-color: #4a2030;
+  color: #e8a0a0;
+}
+.btn-threats:hover {
+  background-color: #3a2030;
+  border-color: #6a3040;
+  color: #ffb8b8;
+}
+
+/* Clear (×) button */
+.btn-clear {
   margin-left: auto;
+  padding: 6px 14px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1;
+  background-color: transparent;
+  color: #666;
+  border-color: #2e3146;
+  border-radius: 6px;
+}
+.btn-clear:hover {
+  background-color: #2a1520;
+  border-color: #6a3040;
+  color: #f06060;
 }
 
-/* Info block positioned exactly 10px to the right of the grid */
-#infoBlock {
-  width: 220px;
-  height: 444.5px; /* Match the SVG's height */
-  padding: 10px;
-  box-sizing: border-box;
-
-  background-color: white;
-  color: black;
-  border: 2px solid black; /* adjust border as desired */
-  font-family: "Poppins", Sans-serif;
-  margin-right: auto;
+/* Carrier buttons */
+.btn-carrier {
+  padding: 8px 4px;
+  background-color: #181b28;
+  color: #8a8ea0;
+  border-color: #252840;
+  font-size: 12.5px;
+  text-align: center;
+}
+.btn-carrier:hover {
+  background-color: #1e2540;
+  border-color: #3e5280;
+  color: #cdd0e0;
 }
 
-#infoBlock hr {
-  margin: 5px 0 10px;
+/* ── Checkboxes (solutions overlay) ──────────────────── */
+#checkboxContainer {
+  width: 100%;
+  max-width: 900px;
 }
 
-/* Each row is displayed as a table row */
-.infoBlockRow {
-  display: table-row;
+#solution-checkboxes {
+  padding: 0;
+  margin: 0;
+  column-count: 5;
+  column-gap: 16px;
 }
 
-/* Each piece (label or value) is displayed as a table cell */
-.infoLabel,
-.infoValue {
-  display: table-cell;
-  vertical-align: middle;
-  padding: 4px;
-  font-size: 14px;
-  /* Any other text styling you want */
+#solution-checkboxes li {
+  break-inside: avoid;
+  padding: 3px 0;
 }
 
-/* Label goes on the left */
-.infoLabel {
-  text-align: left;
-  font-weight: bold;
+ul li label {
+  padding-left: 6px;
+  font-size: 12.5px;
+  color: #8a8ea0;
+  cursor: pointer;
+  user-select: none;
 }
 
-/* Value goes on the right */
-.infoValue {
-  text-align: right;
-  font-weight: normal;
+ul li label:hover {
+  color: #c8cad0;
+}
+
+ul li input[type="checkbox"] {
+  accent-color: #4e6eaa;
+}
+
+/* ── Utility ─────────────────────────────────────────── */
+.hide-solution {
+  display: none;
 }

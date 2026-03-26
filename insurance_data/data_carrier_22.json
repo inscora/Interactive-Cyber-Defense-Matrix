@@ -1,0 +1,47 @@
+[
+  {
+    "": "Devices",
+    "Govern": "",
+    "Identify": "",
+    "Protect": "",
+    "Detect": "",
+    "Respond": "",
+    "Recover": ""
+  },
+  {
+    "": "Applications",
+    "Govern": "",
+    "Identify": "",
+    "Protect": "",
+    "Detect": "",
+    "Respond": "",
+    "Recover": ""
+  },
+  {
+    "": "Networks",
+    "Govern": "",
+    "Identify": "",
+    "Protect": "",
+    "Detect": "",
+    "Respond": "",
+    "Recover": ""
+  },
+  {
+    "": "Data",
+    "Govern": "",
+    "Identify": "",
+    "Protect": "",
+    "Detect": "",
+    "Respond": "",
+    "Recover": ""
+  },
+  {
+    "": "Users",
+    "Govern": "C22-14,C22-15,C22-16",
+    "Identify": "",
+    "Protect": "",
+    "Detect": "",
+    "Respond": "",
+    "Recover": ""
+  }
+]

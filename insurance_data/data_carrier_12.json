@@ -1,0 +1,47 @@
+[
+  {
+    "": "Devices",
+    "Govern": "C12-24,C12-26",
+    "Identify": "",
+    "Protect": "C12-43,C12-45,C12-49,C12-54,C12-73",
+    "Detect": "C12-00,C12-73",
+    "Respond": "C12-00",
+    "Recover": "C12-91"
+  },
+  {
+    "": "Applications",
+    "Govern": "C12-24,C12-26",
+    "Identify": "",
+    "Protect": "C12-43,C12-49",
+    "Detect": "",
+    "Respond": "",
+    "Recover": "C12-91"
+  },
+  {
+    "": "Networks",
+    "Govern": "C12-24,C12-26",
+    "Identify": "",
+    "Protect": "C12-43,C12-47,C12-49",
+    "Detect": "",
+    "Respond": "",
+    "Recover": "C12-91"
+  },
+  {
+    "": "Data",
+    "Govern": "C12-24,C12-26",
+    "Identify": "C12-00,C12-11,C12-14,C12-16,C12-17,C12-18,C12-19,C12-20,C12-24,C12-27,C12-31,C12-37",
+    "Protect": "C12-23,C12-24,C12-43,C12-46,C12-90",
+    "Detect": "",
+    "Respond": "",
+    "Recover": "C12-89,C12-91"
+  },
+  {
+    "": "Users",
+    "Govern": "C12-24,C12-26,C12-40",
+    "Identify": "C12-00,C12-40,C12-43,C12-48,C12-50,C12-51",
+    "Protect": "C12-41,C12-43,C12-49",
+    "Detect": "",
+    "Respond": "",
+    "Recover": "C12-91"
+  }
+]
