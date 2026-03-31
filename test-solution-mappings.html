@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CDM Solution Mapping Tests</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0e1117; color: #c9d1d9; padding: 24px; }
+    h1 { font-size: 1.4rem; margin-bottom: 8px; }
+    .summary { font-size: 1.1rem; margin-bottom: 16px; padding: 12px; border-radius: 6px; }
+    .summary.pass { background: #0d1f0d; border: 1px solid #238636; color: #3fb950; }
+    .summary.fail { background: #2d1014; border: 1px solid #da3633; color: #f85149; }
+    table { border-collapse: collapse; width: 100%; margin-top: 12px; }
+    th, td { padding: 6px 10px; text-align: left; border: 1px solid #30363d; font-size: 0.85rem; }
+    th { background: #161b22; }
+    tr.pass td:first-child::before { content: "✓ "; color: #3fb950; font-weight: bold; }
+    tr.fail td:first-child::before { content: "✗ "; color: #f85149; font-weight: bold; }
+    tr.fail { background: #2d1014; }
+    .mono { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.8rem; }
+    .added { color: #f85149; }
+    .missing { color: #f0883e; }
+    #runInfo { font-size: 0.8rem; color: #8b949e; margin-bottom: 16px; }
+  </style>
+</head>
+<body>
+  <h1>CDM Solution-to-Cell Mapping Tests</h1>
+  <div id="runInfo"></div>
+  <div id="summary" class="summary"></div>
+  <table>
+    <thead><tr><th>Solution</th><th>Status</th><th>Expected Cells</th><th>Actual Cells</th><th>Details</th></tr></thead>
+    <tbody id="results"></tbody>
+  </table>
+
+  <!-- Load the app's script to get the SOLUTIONS array -->
+  <script src="script.js"></script>
+  <script>
+// ═══════════════════════════════════════════════════════════════════
+// REFERENCE MAPPINGS — validated against cdm.inscora.com on 2026-03-31
+// This is the source of truth. If a test fails, either the mapping in
+// script.js was changed unintentionally, or the reference below needs
+// updating (with justification).
+// ═══════════════════════════════════════════════════════════════════
+const REFERENCE_MAPPINGS = {
+  apiDiscovery:             ['Applications-Identify'],
+  apiProtection:            ['Applications-Protect'],
+  attackSurfaceManagement:  ['Applications-Identify','Data-Identify','Devices-Identify','Networks-Identify','Users-Identify'],
+  awarenessTraining:        ['Users-Govern'],
+  botManagement:            ['Applications-Protect'],
+  bugBounty:                ['Applications-Protect','Devices-Protect'],
+  cloudRecovery:            ['Applications-Recover'],
+  codeTesting:              ['Applications-Protect','Devices-Protect'],
+  ddos:                     ['Networks-Protect'],
+  ddosTesting:              ['Networks-Detect','Networks-Protect'],
+  dns:                      ['Networks-Protect'],
+  drPlanAndRehearsals:      ['Applications-Recover','Data-Recover','Devices-Recover','Networks-Recover','Users-Recover'],
+  draas:                    ['Applications-Recover','Data-Recover','Devices-Recover','Networks-Recover','Users-Recover'],
+  darkWebScanning:          ['Data-Detect'],
+  dataIdAndClassification:  ['Data-Identify'],
+  dataLossPrevention:       ['Data-Protect'],
+  deviceBackups:            ['Devices-Recover'],
+  managedEdr:               ['Devices-Detect','Devices-Protect'],
+  emailSecurity:            ['Users-Identify'],
+  firewall:                 ['Networks-Protect'],
+  managedFirewall:          ['Networks-Detect','Networks-Protect'],
+  managedGrc:               ['Applications-Govern','Data-Govern','Devices-Govern','Networks-Govern'],
+  iam:                      ['Users-Identify','Users-Protect'],
+  impersonation:            ['Users-Protect'],
+  incidentResponse:         ['Applications-Respond','Data-Respond','Devices-Respond','Networks-Respond','Users-Respond'],
+  mfaSso:                   ['Users-Identify','Users-Protect'],
+  managedPatching:          ['Applications-Protect','Devices-Protect'],
+  microsegmentation:        ['Networks-Protect'],
+  managedControlsAssurance: ['Applications-Govern','Data-Govern','Devices-Govern','Networks-Govern','Users-Govern'],
+  networkIntelligence:      ['Networks-Detect','Networks-Identify'],
+  otSecurity:               ['Devices-Detect','Devices-Protect','Networks-Detect','Networks-Protect'],
+  pam:                      ['Data-Protect','Users-Protect'],
+  penTest:                  ['Applications-Protect','Devices-Protect'],
+  phishingTests:            ['Users-Govern'],
+  policyEnforcement:        ['Users-Govern'],
+  ransomwareNegotiation:    ['Applications-Respond','Data-Respond','Devices-Respond','Networks-Respond','Users-Respond'],
+  managedSiem:              ['Applications-Detect','Data-Detect','Devices-Detect','Networks-Detect','Users-Detect'],
+  soc:                      ['Applications-Detect','Applications-Respond','Data-Detect','Data-Respond','Devices-Detect','Devices-Respond','Networks-Detect','Networks-Respond','Users-Detect','Users-Respond'],
+  sse:                      ['Applications-Identify','Applications-Protect'],
+  staffingAndRecruiting:    ['Applications-Govern','Data-Govern','Devices-Govern','Networks-Govern'],
+  tapeBackup:               ['Data-Recover'],
+  vmDbBackup:               ['Data-Recover'],
+  vpn:                      ['Applications-Identify','Applications-Protect'],
+  ztna:                     ['Applications-Identify','Applications-Protect'],
+  vCiso:                    ['Applications-Govern','Data-Govern','Devices-Govern','Networks-Govern'],
+};
+
+// Valid cell keys (for structural validation)
+const VALID_ASSETS    = ['Devices','Applications','Networks','Data','Users'];
+const VALID_FUNCTIONS = ['Govern','Identify','Protect','Detect','Respond','Recover'];
+const VALID_CELLS     = new Set(
+  VALID_ASSETS.flatMap(a => VALID_FUNCTIONS.map(f => `${a}-${f}`))
+);
+
+// ═══════════════════════════════════════════════════════════════════
+// Run tests
+// ═══════════════════════════════════════════════════════════════════
+const tbody = document.getElementById('results');
+let passed = 0;
+let failed = 0;
+const failures = [];
+
+// 1. Check that every reference solution exists in SOLUTIONS
+const solutionMap = {};
+SOLUTIONS.forEach(s => { solutionMap[s.id] = s.cells.slice().sort(); });
+
+// 2. Test each reference mapping
+Object.entries(REFERENCE_MAPPINGS).forEach(([id, expectedCells]) => {
+  const expected = expectedCells.slice().sort();
+  const actual   = solutionMap[id];
+  const tr = document.createElement('tr');
+
+  if (!actual) {
+    // Solution missing entirely
+    failed++;
+    tr.className = 'fail';
+    tr.innerHTML = `<td>${id}</td><td>MISSING</td><td class="mono">${expected.join(', ')}</td><td class="mono">—</td><td class="added">Solution not found in SOLUTIONS array</td>`;
+    failures.push(`${id}: solution missing from SOLUTIONS`);
+  } else if (JSON.stringify(actual) === JSON.stringify(expected)) {
+    passed++;
+    tr.className = 'pass';
+    tr.innerHTML = `<td>${id}</td><td>PASS</td><td class="mono">${expected.join(', ')}</td><td class="mono">${actual.join(', ')}</td><td>—</td>`;
+  } else {
+    failed++;
+    tr.className = 'fail';
+    const extra   = actual.filter(c => !expected.includes(c));
+    const missing = expected.filter(c => !actual.includes(c));
+    const details = [];
+    if (extra.length)   details.push(`<span class="added">Extra: ${extra.join(', ')}</span>`);
+    if (missing.length) details.push(`<span class="missing">Missing: ${missing.join(', ')}</span>`);
+    tr.innerHTML = `<td>${id}</td><td>FAIL</td><td class="mono">${expected.join(', ')}</td><td class="mono">${actual.join(', ')}</td><td>${details.join('<br>')}</td>`;
+    failures.push(`${id}: ${details.map(d => d.replace(/<[^>]+>/g,'')).join('; ')}`);
+  }
+  tbody.appendChild(tr);
+});
+
+// 3. Check for solutions in SOLUTIONS that aren't in the reference (new additions without test coverage)
+SOLUTIONS.forEach(s => {
+  if (!REFERENCE_MAPPINGS[s.id]) {
+    failed++;
+    const tr = document.createElement('tr');
+    tr.className = 'fail';
+    tr.innerHTML = `<td>${s.id}</td><td>UNTESTED</td><td class="mono">—</td><td class="mono">${s.cells.slice().sort().join(', ')}</td><td class="added">New solution not in reference mappings — add it to REFERENCE_MAPPINGS in the test file</td>`;
+    tbody.appendChild(tr);
+    failures.push(`${s.id}: new solution missing from REFERENCE_MAPPINGS`);
+  }
+});
+
+// 4. Structural validation: check all cell keys are valid
+SOLUTIONS.forEach(s => {
+  s.cells.forEach(cell => {
+    if (!VALID_CELLS.has(cell)) {
+      failed++;
+      const tr = document.createElement('tr');
+      tr.className = 'fail';
+      tr.innerHTML = `<td>${s.id}</td><td>INVALID CELL</td><td class="mono">—</td><td class="mono">${cell}</td><td class="added">Cell key "${cell}" is not a valid Asset-Function combination</td>`;
+      tbody.appendChild(tr);
+      failures.push(`${s.id}: invalid cell key "${cell}"`);
+    }
+  });
+});
+
+// Summary
+const total = passed + failed;
+const summaryEl = document.getElementById('summary');
+if (failed === 0) {
+  summaryEl.className = 'summary pass';
+  summaryEl.textContent = `All ${passed} tests passed. All ${Object.keys(REFERENCE_MAPPINGS).length} solution mappings match the reference (cdm.inscora.com).`;
+} else {
+  summaryEl.className = 'summary fail';
+  summaryEl.innerHTML = `${failed} of ${total} tests failed.<br><br>${failures.map(f => '• ' + f).join('<br>')}`;
+}
+
+document.getElementById('runInfo').textContent = `Test run: ${new Date().toISOString()} | Solutions in app: ${SOLUTIONS.length} | Reference mappings: ${Object.keys(REFERENCE_MAPPINGS).length}`;
+  </script>
+</body>
+</html>

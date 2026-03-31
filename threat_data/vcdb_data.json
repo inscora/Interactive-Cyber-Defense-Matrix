@@ -1,0 +1,8006 @@
+{
+  "2021": {
+    "n_incidents": 117,
+    "n_campaigns": 30,
+    "techniques": [
+      {
+        "id": "T1574.001",
+        "name": "DLL",
+        "incidents": 52,
+        "campaigns": 13,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 4
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1574.004",
+        "name": "Dylib Hijacking",
+        "incidents": 49,
+        "campaigns": 11,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1574.005",
+        "name": "Executable Installer File Permissions Weakness",
+        "incidents": 46,
+        "campaigns": 8,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1111",
+        "name": "Multi-Factor Authentication Interception",
+        "incidents": 43,
+        "campaigns": 6,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1599.001",
+        "name": "Network Address Translation Traversal",
+        "incidents": 43,
+        "campaigns": 6,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 4
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1606.001",
+        "name": "Web Cookies",
+        "incidents": 43,
+        "campaigns": 6,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1606.002",
+        "name": "SAML Tokens",
+        "incidents": 43,
+        "campaigns": 6,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 3
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact",
+        "incidents": 42,
+        "campaigns": 9,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Recover",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery",
+        "incidents": 42,
+        "campaigns": 9,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Recover",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1558.004",
+        "name": "AS-REP Roasting",
+        "incidents": 11,
+        "campaigns": 6,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation",
+        "incidents": 9,
+        "campaigns": 7,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 4
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1212",
+        "name": "Exploitation for Credential Access",
+        "incidents": 9,
+        "campaigns": 7,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 4
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1133",
+        "name": "External Remote Services",
+        "incidents": 9,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 3
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1021.001",
+        "name": "Remote Desktop Protocol",
+        "incidents": 8,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 3
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 2
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1021.002",
+        "name": "SMB/Windows Admin Shares",
+        "incidents": 8,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1021.003",
+        "name": "Distributed Component Object Model",
+        "incidents": 8,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1021.004",
+        "name": "SSH",
+        "incidents": 8,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1021.005",
+        "name": "VNC",
+        "incidents": 8,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1021.006",
+        "name": "Windows Remote Management",
+        "incidents": 8,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1021.007",
+        "name": "Cloud Services",
+        "incidents": 8,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1021.008",
+        "name": "Direct Cloud VM Connections",
+        "incidents": 8,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1078.001",
+        "name": "Default Accounts",
+        "incidents": 8,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1078.002",
+        "name": "Domain Accounts",
+        "incidents": 8,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 4
+          },
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1078.003",
+        "name": "Local Accounts",
+        "incidents": 8,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 4
+          }
+        ]
+      },
+      {
+        "id": "T1078.004",
+        "name": "Cloud Accounts",
+        "incidents": 8,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 6
+          },
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1134.001",
+        "name": "Token Impersonation/Theft",
+        "incidents": 8,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1134.002",
+        "name": "Create Process with Token",
+        "incidents": 8,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1134.003",
+        "name": "Make and Impersonate Token",
+        "incidents": 8,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1134.005",
+        "name": "SID-History Injection",
+        "incidents": 8,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1550.001",
+        "name": "Application Access Token",
+        "incidents": 8,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1550.002",
+        "name": "Pass the Hash",
+        "incidents": 8,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 3
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1550.003",
+        "name": "Pass the Ticket",
+        "incidents": 8,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 4
+          }
+        ]
+      },
+      {
+        "id": "T1550.004",
+        "name": "Web Session Cookie",
+        "incidents": 8,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1558.001",
+        "name": "Golden Ticket",
+        "incidents": 8,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1558.002",
+        "name": "Silver Ticket",
+        "incidents": 8,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1558.003",
+        "name": "Kerberoasting",
+        "incidents": 8,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1558.005",
+        "name": "Ccache Files",
+        "incidents": 8,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1204.003",
+        "name": "Malicious Image",
+        "incidents": 6,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1598.001",
+        "name": "Spearphishing Service",
+        "incidents": 5,
+        "campaigns": 3,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1598.002",
+        "name": "Spearphishing Attachment",
+        "incidents": 5,
+        "campaigns": 3,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1598.003",
+        "name": "Spearphishing Link",
+        "incidents": 5,
+        "campaigns": 3,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1204.001",
+        "name": "Malicious Link",
+        "incidents": 4,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1204.002",
+        "name": "Malicious File",
+        "incidents": 4,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment",
+        "incidents": 4,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link",
+        "incidents": 4,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1566.003",
+        "name": "Spearphishing via Service",
+        "incidents": 4,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1566.004",
+        "name": "Spearphishing Voice",
+        "incidents": 4,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1598.004",
+        "name": "Spearphishing Voice",
+        "incidents": 4,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application",
+        "incidents": 4,
+        "campaigns": 3,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 3
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 3
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1548.002",
+        "name": "Bypass User Account Control",
+        "incidents": 3,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1548.003",
+        "name": "Sudo and Sudo Caching",
+        "incidents": 3,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1548.004",
+        "name": "Elevated Execution with Prompt",
+        "incidents": 3,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1574.010",
+        "name": "Services File Permissions Weakness",
+        "incidents": 3,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1574.011",
+        "name": "Services Registry Permissions Weakness",
+        "incidents": 3,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1525",
+        "name": "Implant Internal Image",
+        "incidents": 2,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1001.001",
+        "name": "Junk Data",
+        "incidents": 2,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1008",
+        "name": "Fallback Channels",
+        "incidents": 2,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1104",
+        "name": "Multi-Stage Channels",
+        "incidents": 2,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1132.001",
+        "name": "Standard Encoding",
+        "incidents": 2,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1132.002",
+        "name": "Non-Standard Encoding",
+        "incidents": 2,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1205.001",
+        "name": "Port Knocking",
+        "incidents": 2,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1564.007",
+        "name": "VBA Stomping",
+        "incidents": 2,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1568.002",
+        "name": "Domain Generation Algorithms",
+        "incidents": 2,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1572",
+        "name": "Protocol Tunneling",
+        "incidents": 2,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1573.001",
+        "name": "Symmetric Cryptography",
+        "incidents": 2,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1573.002",
+        "name": "Asymmetric Cryptography",
+        "incidents": 2,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1554",
+        "name": "Compromise Host Software Binary",
+        "incidents": 2,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1610",
+        "name": "Deploy Container",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1612",
+        "name": "Build Image on Host",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1001.002",
+        "name": "Steganography",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1001.003",
+        "name": "Protocol or Service Impersonation",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1027.010",
+        "name": "Command Obfuscation",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Devices",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1027.011",
+        "name": "Fileless Storage",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1027.012",
+        "name": "LNK Icon Smuggling",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Devices",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1027.013",
+        "name": "Encrypted/Encoded File",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Devices",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1027.014",
+        "name": "Polymorphic Code",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Devices",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1205.002",
+        "name": "Socket Filters",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1211",
+        "name": "Exploitation for Defense Evasion",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 3
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1564.002",
+        "name": "Hidden Users",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1564.003",
+        "name": "Hidden Window",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1564.004",
+        "name": "NTFS File Attributes",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1564.006",
+        "name": "Run Virtual Instance",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1564.012",
+        "name": "File/Path Exclusions",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1666",
+        "name": "Modify Cloud Resource Hierarchy",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1027.002",
+        "name": "Software Packing",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1498.001",
+        "name": "Direct Network Flood",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1498.002",
+        "name": "Reflection Amplification",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1499.001",
+        "name": "OS Exhaustion Flood",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1499.002",
+        "name": "Service Exhaustion Flood",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1499.003",
+        "name": "Application Exhaustion Flood",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1499.004",
+        "name": "Application or System Exploitation",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1110.001",
+        "name": "Password Guessing",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 3
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1110.002",
+        "name": "Password Cracking",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1110.003",
+        "name": "Password Spraying",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 3
+          }
+        ]
+      },
+      {
+        "id": "T1110.004",
+        "name": "Credential Stuffing",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 4
+          }
+        ]
+      },
+      {
+        "id": "T1505.001",
+        "name": "SQL Stored Procedures",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1505.002",
+        "name": "Transport Agent",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1505.003",
+        "name": "Web Shell",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1071.001",
+        "name": "Web Protocols",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1071.002",
+        "name": "File Transfer Protocols",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1071.003",
+        "name": "Mail Protocols",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1071.004",
+        "name": "DNS",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1090.001",
+        "name": "Internal Proxy",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1090.002",
+        "name": "External Proxy",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1090.003",
+        "name": "Multi-hop Proxy",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1090.004",
+        "name": "Domain Fronting",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1095",
+        "name": "Non-Application Layer Protocol",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 3
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1102.001",
+        "name": "Dead Drop Resolver",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1102.002",
+        "name": "Bidirectional Communication",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1102.003",
+        "name": "One-Way Communication",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1571",
+        "name": "Non-Standard Port",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1003.006",
+        "name": "DCSync",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 3
+          }
+        ]
+      },
+      {
+        "id": "T1011.001",
+        "name": "Exfiltration Over Bluetooth",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1020.001",
+        "name": "Traffic Duplication",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1029",
+        "name": "Scheduled Transfer",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1030",
+        "name": "Data Transfer Size Limits",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Data",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1048.001",
+        "name": "Exfiltration Over Symmetric Encrypted Non-C2 Protocol",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 3
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1048.002",
+        "name": "Exfiltration Over Asymmetric Encrypted Non-C2 Protocol",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 3
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Data",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1048.003",
+        "name": "Exfiltration Over Unencrypted Non-C2 Protocol",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 3
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Data",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1052.001",
+        "name": "Exfiltration over USB",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Data",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1197",
+        "name": "BITS Jobs",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1537",
+        "name": "Transfer Data to Cloud Account",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Data",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1560.001",
+        "name": "Archive via Utility",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1567.001",
+        "name": "Exfiltration to Code Repository",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1567.002",
+        "name": "Exfiltration to Cloud Storage",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1567.003",
+        "name": "Exfiltration to Text Storage Sites",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1567.004",
+        "name": "Exfiltration Over Webhook",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Data",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      }
+    ]
+  },
+  "2022": {
+    "n_incidents": 6,
+    "n_campaigns": 5,
+    "techniques": [
+      {
+        "id": "T1574.001",
+        "name": "DLL",
+        "incidents": 4,
+        "campaigns": 3,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 4
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1574.004",
+        "name": "Dylib Hijacking",
+        "incidents": 4,
+        "campaigns": 3,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1111",
+        "name": "Multi-Factor Authentication Interception",
+        "incidents": 3,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1574.005",
+        "name": "Executable Installer File Permissions Weakness",
+        "incidents": 3,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1599.001",
+        "name": "Network Address Translation Traversal",
+        "incidents": 3,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 4
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1606.001",
+        "name": "Web Cookies",
+        "incidents": 3,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1606.002",
+        "name": "SAML Tokens",
+        "incidents": 3,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 3
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact",
+        "incidents": 2,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Recover",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery",
+        "incidents": 2,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Recover",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1110.001",
+        "name": "Password Guessing",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 3
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1110.002",
+        "name": "Password Cracking",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1110.003",
+        "name": "Password Spraying",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 3
+          }
+        ]
+      },
+      {
+        "id": "T1110.004",
+        "name": "Credential Stuffing",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 4
+          }
+        ]
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 4
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1212",
+        "name": "Exploitation for Credential Access",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 4
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      }
+    ]
+  },
+  "2023": {
+    "n_incidents": 747,
+    "n_campaigns": 1,
+    "techniques": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 4
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1212",
+        "name": "Exploitation for Credential Access",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 4
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1574.001",
+        "name": "DLL",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 4
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1574.004",
+        "name": "Dylib Hijacking",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1098.006",
+        "name": "Additional Container Cluster Roles",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1133",
+        "name": "External Remote Services",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 3
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1525",
+        "name": "Implant Internal Image",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1554",
+        "name": "Compromise Host Software Binary",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1205.001",
+        "name": "Port Knocking",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1505.001",
+        "name": "SQL Stored Procedures",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1505.002",
+        "name": "Transport Agent",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1505.003",
+        "name": "Web Shell",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1001.001",
+        "name": "Junk Data",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1008",
+        "name": "Fallback Channels",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1071.001",
+        "name": "Web Protocols",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1071.002",
+        "name": "File Transfer Protocols",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1071.003",
+        "name": "Mail Protocols",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1071.004",
+        "name": "DNS",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1090.001",
+        "name": "Internal Proxy",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1090.002",
+        "name": "External Proxy",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1090.003",
+        "name": "Multi-hop Proxy",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1090.004",
+        "name": "Domain Fronting",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1095",
+        "name": "Non-Application Layer Protocol",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 3
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1102.001",
+        "name": "Dead Drop Resolver",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1102.002",
+        "name": "Bidirectional Communication",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1102.003",
+        "name": "One-Way Communication",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1104",
+        "name": "Multi-Stage Channels",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1132.001",
+        "name": "Standard Encoding",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1132.002",
+        "name": "Non-Standard Encoding",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1568.002",
+        "name": "Domain Generation Algorithms",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1571",
+        "name": "Non-Standard Port",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1572",
+        "name": "Protocol Tunneling",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1573.001",
+        "name": "Symmetric Cryptography",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1573.002",
+        "name": "Asymmetric Cryptography",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Recover",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Recover",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      }
+    ]
+  },
+  "2024": {
+    "n_incidents": 10,
+    "n_campaigns": 5,
+    "techniques": [
+      {
+        "id": "T1574.001",
+        "name": "DLL",
+        "incidents": 5,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 4
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1574.004",
+        "name": "Dylib Hijacking",
+        "incidents": 5,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1111",
+        "name": "Multi-Factor Authentication Interception",
+        "incidents": 4,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1574.005",
+        "name": "Executable Installer File Permissions Weakness",
+        "incidents": 4,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1599.001",
+        "name": "Network Address Translation Traversal",
+        "incidents": 4,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 4
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1606.001",
+        "name": "Web Cookies",
+        "incidents": 4,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1606.002",
+        "name": "SAML Tokens",
+        "incidents": 4,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 3
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1021.001",
+        "name": "Remote Desktop Protocol",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 3
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 2
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1021.002",
+        "name": "SMB/Windows Admin Shares",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1021.003",
+        "name": "Distributed Component Object Model",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1021.004",
+        "name": "SSH",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1021.005",
+        "name": "VNC",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1021.006",
+        "name": "Windows Remote Management",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1021.007",
+        "name": "Cloud Services",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1021.008",
+        "name": "Direct Cloud VM Connections",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1078.001",
+        "name": "Default Accounts",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1078.002",
+        "name": "Domain Accounts",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 4
+          },
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1078.003",
+        "name": "Local Accounts",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 4
+          }
+        ]
+      },
+      {
+        "id": "T1078.004",
+        "name": "Cloud Accounts",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 6
+          },
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1133",
+        "name": "External Remote Services",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 3
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1134.001",
+        "name": "Token Impersonation/Theft",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1134.002",
+        "name": "Create Process with Token",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1134.003",
+        "name": "Make and Impersonate Token",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1134.005",
+        "name": "SID-History Injection",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1550.001",
+        "name": "Application Access Token",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1550.002",
+        "name": "Pass the Hash",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 3
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1550.003",
+        "name": "Pass the Ticket",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 4
+          }
+        ]
+      },
+      {
+        "id": "T1550.004",
+        "name": "Web Session Cookie",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1558.001",
+        "name": "Golden Ticket",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1558.002",
+        "name": "Silver Ticket",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1558.003",
+        "name": "Kerberoasting",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1558.004",
+        "name": "AS-REP Roasting",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1558.005",
+        "name": "Ccache Files",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Recover",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery",
+        "incidents": 2,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Recover",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 4
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1212",
+        "name": "Exploitation for Credential Access",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 4
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      }
+    ]
+  },
+  "2025": {
+    "n_incidents": 116,
+    "n_campaigns": 7,
+    "techniques": [
+      {
+        "id": "T1021.001",
+        "name": "Remote Desktop Protocol",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 3
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 2
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1021.002",
+        "name": "SMB/Windows Admin Shares",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1021.003",
+        "name": "Distributed Component Object Model",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1021.004",
+        "name": "SSH",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1021.005",
+        "name": "VNC",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1021.006",
+        "name": "Windows Remote Management",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1021.007",
+        "name": "Cloud Services",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1021.008",
+        "name": "Direct Cloud VM Connections",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1078.001",
+        "name": "Default Accounts",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1078.002",
+        "name": "Domain Accounts",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 4
+          },
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1078.003",
+        "name": "Local Accounts",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 4
+          }
+        ]
+      },
+      {
+        "id": "T1078.004",
+        "name": "Cloud Accounts",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 6
+          },
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1133",
+        "name": "External Remote Services",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 3
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1134.001",
+        "name": "Token Impersonation/Theft",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1134.002",
+        "name": "Create Process with Token",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1134.003",
+        "name": "Make and Impersonate Token",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1134.005",
+        "name": "SID-History Injection",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1550.001",
+        "name": "Application Access Token",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1550.002",
+        "name": "Pass the Hash",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 3
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1550.003",
+        "name": "Pass the Ticket",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 4
+          }
+        ]
+      },
+      {
+        "id": "T1550.004",
+        "name": "Web Session Cookie",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1558.001",
+        "name": "Golden Ticket",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1558.002",
+        "name": "Silver Ticket",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1558.003",
+        "name": "Kerberoasting",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1558.004",
+        "name": "AS-REP Roasting",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1558.005",
+        "name": "Ccache Files",
+        "incidents": 73,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1574.001",
+        "name": "DLL",
+        "incidents": 18,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 4
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1574.004",
+        "name": "Dylib Hijacking",
+        "incidents": 18,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation",
+        "incidents": 14,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 4
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1212",
+        "name": "Exploitation for Credential Access",
+        "incidents": 14,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 4
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact",
+        "incidents": 7,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Recover",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery",
+        "incidents": 7,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Recover",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1204.003",
+        "name": "Malicious Image",
+        "incidents": 7,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1598.001",
+        "name": "Spearphishing Service",
+        "incidents": 7,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1598.002",
+        "name": "Spearphishing Attachment",
+        "incidents": 7,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1598.003",
+        "name": "Spearphishing Link",
+        "incidents": 7,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1111",
+        "name": "Multi-Factor Authentication Interception",
+        "incidents": 5,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1574.005",
+        "name": "Executable Installer File Permissions Weakness",
+        "incidents": 5,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1599.001",
+        "name": "Network Address Translation Traversal",
+        "incidents": 5,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 4
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1606.001",
+        "name": "Web Cookies",
+        "incidents": 5,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1606.002",
+        "name": "SAML Tokens",
+        "incidents": 5,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 3
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      }
+    ]
+  },
+  "ALL": {
+    "n_incidents": 957,
+    "n_campaigns": 35,
+    "techniques": [
+      {
+        "id": "T1133",
+        "name": "External Remote Services",
+        "incidents": 830,
+        "campaigns": 7,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 3
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1574.001",
+        "name": "DLL",
+        "incidents": 824,
+        "campaigns": 14,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 4
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1574.004",
+        "name": "Dylib Hijacking",
+        "incidents": 821,
+        "campaigns": 12,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact",
+        "incidents": 800,
+        "campaigns": 10,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Recover",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery",
+        "incidents": 800,
+        "campaigns": 10,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Recover",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation",
+        "incidents": 771,
+        "campaigns": 8,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 4
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1212",
+        "name": "Exploitation for Credential Access",
+        "incidents": 771,
+        "campaigns": 8,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 4
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1525",
+        "name": "Implant Internal Image",
+        "incidents": 749,
+        "campaigns": 3,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1001.001",
+        "name": "Junk Data",
+        "incidents": 749,
+        "campaigns": 3,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1008",
+        "name": "Fallback Channels",
+        "incidents": 749,
+        "campaigns": 3,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1104",
+        "name": "Multi-Stage Channels",
+        "incidents": 749,
+        "campaigns": 3,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1132.001",
+        "name": "Standard Encoding",
+        "incidents": 749,
+        "campaigns": 3,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1132.002",
+        "name": "Non-Standard Encoding",
+        "incidents": 749,
+        "campaigns": 3,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1205.001",
+        "name": "Port Knocking",
+        "incidents": 749,
+        "campaigns": 3,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1568.002",
+        "name": "Domain Generation Algorithms",
+        "incidents": 749,
+        "campaigns": 3,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1572",
+        "name": "Protocol Tunneling",
+        "incidents": 749,
+        "campaigns": 3,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1573.001",
+        "name": "Symmetric Cryptography",
+        "incidents": 749,
+        "campaigns": 3,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1573.002",
+        "name": "Asymmetric Cryptography",
+        "incidents": 749,
+        "campaigns": 3,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1554",
+        "name": "Compromise Host Software Binary",
+        "incidents": 749,
+        "campaigns": 3,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1505.001",
+        "name": "SQL Stored Procedures",
+        "incidents": 748,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1505.002",
+        "name": "Transport Agent",
+        "incidents": 748,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1505.003",
+        "name": "Web Shell",
+        "incidents": 748,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1071.001",
+        "name": "Web Protocols",
+        "incidents": 748,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1071.002",
+        "name": "File Transfer Protocols",
+        "incidents": 748,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1071.003",
+        "name": "Mail Protocols",
+        "incidents": 748,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1071.004",
+        "name": "DNS",
+        "incidents": 748,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1090.001",
+        "name": "Internal Proxy",
+        "incidents": 748,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1090.002",
+        "name": "External Proxy",
+        "incidents": 748,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1090.003",
+        "name": "Multi-hop Proxy",
+        "incidents": 748,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1090.004",
+        "name": "Domain Fronting",
+        "incidents": 748,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1095",
+        "name": "Non-Application Layer Protocol",
+        "incidents": 748,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 3
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1102.001",
+        "name": "Dead Drop Resolver",
+        "incidents": 748,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1102.002",
+        "name": "Bidirectional Communication",
+        "incidents": 748,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1102.003",
+        "name": "One-Way Communication",
+        "incidents": 748,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1571",
+        "name": "Non-Standard Port",
+        "incidents": 748,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1098.006",
+        "name": "Additional Container Cluster Roles",
+        "incidents": 747,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1558.004",
+        "name": "AS-REP Roasting",
+        "incidents": 85,
+        "campaigns": 7,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1021.001",
+        "name": "Remote Desktop Protocol",
+        "incidents": 82,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 3
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 2
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1021.002",
+        "name": "SMB/Windows Admin Shares",
+        "incidents": 82,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1021.003",
+        "name": "Distributed Component Object Model",
+        "incidents": 82,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1021.004",
+        "name": "SSH",
+        "incidents": 82,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1021.005",
+        "name": "VNC",
+        "incidents": 82,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1021.006",
+        "name": "Windows Remote Management",
+        "incidents": 82,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1021.007",
+        "name": "Cloud Services",
+        "incidents": 82,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1021.008",
+        "name": "Direct Cloud VM Connections",
+        "incidents": 82,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1078.001",
+        "name": "Default Accounts",
+        "incidents": 82,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1078.002",
+        "name": "Domain Accounts",
+        "incidents": 82,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 4
+          },
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1078.003",
+        "name": "Local Accounts",
+        "incidents": 82,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 4
+          }
+        ]
+      },
+      {
+        "id": "T1078.004",
+        "name": "Cloud Accounts",
+        "incidents": 82,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 6
+          },
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1134.001",
+        "name": "Token Impersonation/Theft",
+        "incidents": 82,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1134.002",
+        "name": "Create Process with Token",
+        "incidents": 82,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1134.003",
+        "name": "Make and Impersonate Token",
+        "incidents": 82,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1134.005",
+        "name": "SID-History Injection",
+        "incidents": 82,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1550.001",
+        "name": "Application Access Token",
+        "incidents": 82,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1550.002",
+        "name": "Pass the Hash",
+        "incidents": 82,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 3
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1550.003",
+        "name": "Pass the Ticket",
+        "incidents": 82,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 4
+          }
+        ]
+      },
+      {
+        "id": "T1550.004",
+        "name": "Web Session Cookie",
+        "incidents": 82,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1558.001",
+        "name": "Golden Ticket",
+        "incidents": 82,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1558.002",
+        "name": "Silver Ticket",
+        "incidents": 82,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1558.003",
+        "name": "Kerberoasting",
+        "incidents": 82,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1558.005",
+        "name": "Ccache Files",
+        "incidents": 82,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1574.005",
+        "name": "Executable Installer File Permissions Weakness",
+        "incidents": 58,
+        "campaigns": 8,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1111",
+        "name": "Multi-Factor Authentication Interception",
+        "incidents": 55,
+        "campaigns": 6,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1599.001",
+        "name": "Network Address Translation Traversal",
+        "incidents": 55,
+        "campaigns": 6,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 4
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1606.001",
+        "name": "Web Cookies",
+        "incidents": 55,
+        "campaigns": 6,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1606.002",
+        "name": "SAML Tokens",
+        "incidents": 55,
+        "campaigns": 6,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 3
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1204.003",
+        "name": "Malicious Image",
+        "incidents": 13,
+        "campaigns": 5,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1598.001",
+        "name": "Spearphishing Service",
+        "incidents": 12,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1598.002",
+        "name": "Spearphishing Attachment",
+        "incidents": 12,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1598.003",
+        "name": "Spearphishing Link",
+        "incidents": 12,
+        "campaigns": 4,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1204.001",
+        "name": "Malicious Link",
+        "incidents": 4,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1204.002",
+        "name": "Malicious File",
+        "incidents": 4,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment",
+        "incidents": 4,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link",
+        "incidents": 4,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1566.003",
+        "name": "Spearphishing via Service",
+        "incidents": 4,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1566.004",
+        "name": "Spearphishing Voice",
+        "incidents": 4,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1598.004",
+        "name": "Spearphishing Voice",
+        "incidents": 4,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application",
+        "incidents": 4,
+        "campaigns": 3,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 3
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 3
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1548.002",
+        "name": "Bypass User Account Control",
+        "incidents": 3,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1548.003",
+        "name": "Sudo and Sudo Caching",
+        "incidents": 3,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1548.004",
+        "name": "Elevated Execution with Prompt",
+        "incidents": 3,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1574.010",
+        "name": "Services File Permissions Weakness",
+        "incidents": 3,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1574.011",
+        "name": "Services Registry Permissions Weakness",
+        "incidents": 3,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1564.007",
+        "name": "VBA Stomping",
+        "incidents": 2,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1110.001",
+        "name": "Password Guessing",
+        "incidents": 2,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 3
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1110.002",
+        "name": "Password Cracking",
+        "incidents": 2,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 2
+          }
+        ]
+      },
+      {
+        "id": "T1110.003",
+        "name": "Password Spraying",
+        "incidents": 2,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 3
+          }
+        ]
+      },
+      {
+        "id": "T1110.004",
+        "name": "Credential Stuffing",
+        "incidents": 2,
+        "campaigns": 2,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 4
+          }
+        ]
+      },
+      {
+        "id": "T1610",
+        "name": "Deploy Container",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1612",
+        "name": "Build Image on Host",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1001.002",
+        "name": "Steganography",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1001.003",
+        "name": "Protocol or Service Impersonation",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1027.010",
+        "name": "Command Obfuscation",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Devices",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1027.011",
+        "name": "Fileless Storage",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1027.012",
+        "name": "LNK Icon Smuggling",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Devices",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1027.013",
+        "name": "Encrypted/Encoded File",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Devices",
+            "w": 2
+          },
+          {
+            "f": "Detect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1027.014",
+        "name": "Polymorphic Code",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Devices",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1205.002",
+        "name": "Socket Filters",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1211",
+        "name": "Exploitation for Defense Evasion",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 3
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1564.002",
+        "name": "Hidden Users",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1564.003",
+        "name": "Hidden Window",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1564.004",
+        "name": "NTFS File Attributes",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1564.006",
+        "name": "Run Virtual Instance",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1564.012",
+        "name": "File/Path Exclusions",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1666",
+        "name": "Modify Cloud Resource Hierarchy",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1027.002",
+        "name": "Software Packing",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1498.001",
+        "name": "Direct Network Flood",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1498.002",
+        "name": "Reflection Amplification",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1499.001",
+        "name": "OS Exhaustion Flood",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1499.002",
+        "name": "Service Exhaustion Flood",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1499.003",
+        "name": "Application Exhaustion Flood",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1499.004",
+        "name": "Application or System Exploitation",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1003.006",
+        "name": "DCSync",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 3
+          }
+        ]
+      },
+      {
+        "id": "T1011.001",
+        "name": "Exfiltration Over Bluetooth",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1020.001",
+        "name": "Traffic Duplication",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1029",
+        "name": "Scheduled Transfer",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1030",
+        "name": "Data Transfer Size Limits",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Data",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1048.001",
+        "name": "Exfiltration Over Symmetric Encrypted Non-C2 Protocol",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 3
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1048.002",
+        "name": "Exfiltration Over Asymmetric Encrypted Non-C2 Protocol",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 3
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Data",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1048.003",
+        "name": "Exfiltration Over Unencrypted Non-C2 Protocol",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 3
+          },
+          {
+            "f": "Detect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Data",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1052.001",
+        "name": "Exfiltration over USB",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 2
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Detect",
+            "a": "Data",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1197",
+        "name": "BITS Jobs",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Devices",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1537",
+        "name": "Transfer Data to Cloud Account",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Data",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Users",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Applications",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1560.001",
+        "name": "Archive via Utility",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Identify",
+            "a": "Devices",
+            "w": 1
+          },
+          {
+            "f": "Identify",
+            "a": "Applications",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1567.001",
+        "name": "Exfiltration to Code Repository",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1567.002",
+        "name": "Exfiltration to Cloud Storage",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1567.003",
+        "name": "Exfiltration to Text Storage Sites",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Protect",
+            "a": "Networks",
+            "w": 1
+          }
+        ]
+      },
+      {
+        "id": "T1567.004",
+        "name": "Exfiltration Over Webhook",
+        "incidents": 1,
+        "campaigns": 1,
+        "cells": [
+          {
+            "f": "Detect",
+            "a": "Data",
+            "w": 1
+          },
+          {
+            "f": "Protect",
+            "a": "Data",
+            "w": 1
+          }
+        ]
+      }
+    ]
+  }
+}
