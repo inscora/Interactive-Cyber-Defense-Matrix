@@ -523,6 +523,8 @@ function clearDataset() {
   setActiveButton(null);
   selectedCell = null;
   document.getElementById('ttpCellFilter').style.display = 'none';
+  highlightTechsForCell(null);
+  clearCellSelection();
   document.getElementById('ttpSearchInput').value = '';
   document.getElementById('ttpTableBody').innerHTML = '';
 }
@@ -562,6 +564,14 @@ const ttpControlsEl = document.getElementById('ttp-controls');
 function switchTab(tab) {
   currentTab = tab;
 
+  // Swap selection highlight color to match the new tab
+  const oldClass = tab === 'carriers' ? 'cell-selected-red' : 'cell-selected-blue';
+  const newClass = tab === 'carriers' ? 'cell-selected-blue' : 'cell-selected-red';
+  document.querySelectorAll(`.${oldClass}`).forEach(c => {
+    c.classList.remove(oldClass);
+    c.classList.add(newClass);
+  });
+
   if (tab === 'carriers') {
     tabCarriersBtn.classList.add('tab-btn-active');
     tabThreatsBtn.classList.remove('tab-btn-active');
@@ -576,8 +586,8 @@ function switchTab(tab) {
     tabPanelCarriers.classList.remove('tab-panel-active');
     tabPanelThreats.classList.add('tab-panel-active');
     ttpControlsEl.style.display = 'flex';
-    // Load default year
-    loadTTPYear(currentYear);
+    // Load default year, preserve any existing cell selection
+    loadTTPYear(currentYear, true);
   }
 }
 
@@ -604,7 +614,7 @@ carrierFilePaths.forEach((filePath, index) => {
 async function loadAllCarriers() {
   const result = await combineJSON(carrierFilePaths);
   currentDataset = result.url;
-  setCarrierTitle('All Carriers', getTotalQuestions(result.data));
+  setCarrierTitle('All Cyber Insurance Applications', getTotalQuestions(result.data));
   setActiveButton(null);
   loadAndDisplayData(result.url);
 }
@@ -668,7 +678,7 @@ async function loadVCDBData() {
 }
 
 // ─── Load and render TTP year ────────────────────────────────────
-function loadTTPYear(year) {
+function loadTTPYear(year, preserveSelection) {
   if (!vcdbData) return;
   currentYear = year;
 
@@ -680,10 +690,14 @@ function loadTTPYear(year) {
   const yearData = vcdbData[year] || { n_incidents: 0, n_campaigns: 0, techniques: [] };
   allTechniques = yearData.techniques || [];
 
-  // Reset search and cell filter
+  // Reset search; only reset cell filter if not preserving selection
   document.getElementById('ttpSearchInput').value = '';
-  selectedCell = null;
-  document.getElementById('ttpCellFilter').style.display = 'none';
+  if (!preserveSelection) {
+    selectedCell = null;
+    document.getElementById('ttpCellFilter').style.display = 'none';
+    highlightTechsForCell(null);
+    clearCellSelection();
+  }
 
   // Render grid and table
   renderTTPGrid(allTechniques);
@@ -766,18 +780,37 @@ function updateTTPTable() {
     return ttpSortAsc ? String(va).localeCompare(String(vb)) : String(vb).localeCompare(String(va));
   });
 
+  // Helper: build MITRE ATT&CK URL from technique ID (e.g. T1574.001 → /techniques/T1574/001/)
+  function mitreURL(techId) {
+    const parts = techId.split('.');
+    if (parts.length === 2) return `https://attack.mitre.org/techniques/${parts[0]}/${parts[1]}/`;
+    return `https://attack.mitre.org/techniques/${techId}/`;
+  }
+
   // Render rows
   filtered.forEach(tech => {
     const tr = document.createElement('tr');
 
     const idCell = document.createElement('td');
     idCell.className = 'ttp-id';
-    idCell.textContent = tech.id;
+    const idLink = document.createElement('a');
+    idLink.href = mitreURL(tech.id);
+    idLink.target = '_blank';
+    idLink.rel = 'noopener noreferrer';
+    idLink.className = 'mitre-link';
+    idLink.textContent = tech.id;
+    idCell.appendChild(idLink);
     tr.appendChild(idCell);
 
     const nameCell = document.createElement('td');
     nameCell.className = 'ttp-name';
-    nameCell.textContent = tech.name;
+    const nameLink = document.createElement('a');
+    nameLink.href = mitreURL(tech.id);
+    nameLink.target = '_blank';
+    nameLink.rel = 'noopener noreferrer';
+    nameLink.className = 'mitre-link';
+    nameLink.textContent = tech.name;
+    nameCell.appendChild(nameLink);
     tr.appendChild(nameCell);
 
     const countCell = document.createElement('td');
@@ -799,33 +832,65 @@ function updateTTPTable() {
   });
 }
 
-// ─── Grid cell clicks for TTP filtering ───────────────────────────
+// ─── Highlight applicable technologies in sidebar for a cell ──────
+function highlightTechsForCell(cellKey) {
+  // Clear all hints first
+  document.querySelectorAll('.tech-item').forEach(item => {
+    item.classList.remove('tech-item-hint');
+  });
+  if (!cellKey) return;
+  // Find solutions that cover this cell
+  SOLUTIONS.forEach(sol => {
+    if (sol.cells.includes(cellKey)) {
+      const item = document.querySelector(`.tech-item[data-id="${sol.id}"]`);
+      if (item) item.classList.add('tech-item-hint');
+    }
+  });
+}
+
+// ─── Grid cell clicks for TTP filtering + tech highlighting ───────
+function clearCellSelection() {
+  document.querySelectorAll('.cdm-cell').forEach(c => {
+    c.classList.remove('cell-selected-blue', 'cell-selected-red');
+  });
+}
+
 document.getElementById('cdmGrid').addEventListener('click', (e) => {
   const cell = e.target.closest('.cdm-cell');
-  if (!cell || currentTab !== 'threats') return;
+  if (!cell) return;
 
   const asset = cell.dataset.asset;
   const func = cell.dataset.func;
+  const cellKey = `${asset}-${func}`;
 
   if (selectedCell && selectedCell.asset === asset && selectedCell.func === func) {
     // Deselect
     selectedCell = null;
     document.getElementById('ttpCellFilter').style.display = 'none';
+    highlightTechsForCell(null);
+    clearCellSelection();
   } else {
     // Select
     selectedCell = { asset, func };
     const filterEl = document.getElementById('ttpCellFilter');
     document.getElementById('ttpCellFilterText').textContent = `${asset} — ${func}`;
     filterEl.style.display = 'inline-flex';
+    highlightTechsForCell(cellKey);
+    clearCellSelection();
+    cell.classList.add(currentTab === 'threats' ? 'cell-selected-red' : 'cell-selected-blue');
   }
 
-  updateTTPTable();
+  if (currentTab === 'threats') {
+    updateTTPTable();
+  }
 });
 
 // ─── Clear cell filter ────────────────────────────────────────────
 document.getElementById('ttpCellFilterClear').addEventListener('click', () => {
   selectedCell = null;
   document.getElementById('ttpCellFilter').style.display = 'none';
+  highlightTechsForCell(null);
+  clearCellSelection();
   updateTTPTable();
 });
 
