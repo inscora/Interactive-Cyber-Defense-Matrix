@@ -711,15 +711,21 @@ function loadTTPYear(year, preserveSelection) {
   setCarrierTitle(`Threat TTPs from VCDB — ${yearLabel}\u2003—\u2003${nInc} incidents\u2003·\u2003${nCamp} campaigns\u2003·\u2003${nTech} techniques`);
 }
 
-// ─── TTP Counts mode toggle ──────────────────────────────────────
-const ttpCountsToggle = document.getElementById('ttpCountsToggle');
-ttpCountsToggle.addEventListener('change', () => {
-  ttpCountsMode = ttpCountsToggle.checked ? 'campaigns' : 'incidents';
+// ─── TTP Counts mode segmented toggle ────────────────────────────
+const countsBtnInc = document.getElementById('countsModeIncidents');
+const countsBtnCamp = document.getElementById('countsModesCampaigns');
+
+function setCountsMode(mode) {
+  ttpCountsMode = mode;
   const headerEl = document.getElementById('ttp-col-header');
-  headerEl.textContent = ttpCountsMode === 'campaigns' ? 'Campaigns' : 'Incidents';
+  headerEl.textContent = mode === 'campaigns' ? 'Campaigns' : 'Incidents';
+  countsBtnInc.classList.toggle('counts-seg-active', mode === 'incidents');
+  countsBtnCamp.classList.toggle('counts-seg-active', mode === 'campaigns');
   renderTTPGrid(allTechniques);
   updateTTPTable();
-});
+}
+countsBtnInc.addEventListener('click', () => setCountsMode('incidents'));
+countsBtnCamp.addEventListener('click', () => setCountsMode('campaigns'));
 
 // ─── TTP Search/Filter ───────────────────────────────────────────
 const ttpSearchInput = document.getElementById('ttpSearchInput');
@@ -814,7 +820,7 @@ function updateTTPTable() {
     tr.appendChild(nameCell);
 
     const countCell = document.createElement('td');
-    countCell.className = 'ttp-count';
+    countCell.className = `ttp-count ${ttpCountsMode === 'campaigns' ? 'ttp-count-campaigns' : 'ttp-count-incidents'}`;
     countCell.textContent = ttpCountsMode === 'campaigns' ? tech.campaigns : tech.incidents;
     tr.appendChild(countCell);
 

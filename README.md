@@ -1,35 +1,42 @@
 # Interactive Cyber Defense Matrix
 
-## How the Files Work Together
+> **Live version:** [cdm.inscora.com](https://cdm.inscora.com)
 
-### index.html
+An interactive visualization of the [Cyber Defense Matrix](https://cyberdefensematrix.com/) framework, mapping cybersecurity technologies, insurance application coverage, and real-world threat data (MITRE ATT&CK techniques) across asset classes and security functions.
 
-Within the body tag, we set up the two column grid by applying the class `grid`. 
+## Overview
 
-Underneath the body, mapping to the two columns, there is a section tag with an empty `ul`, and an inline svg that builds the chart. 
+The CDM grid plots five asset classes (Devices, Applications, Networks, Data, Users) against six security functions (Govern, Identify, Protect, Detect, Respond, Recover), divided by a "Boom line" separating proactive (left) from reactive (right) functions.
 
-The empty `ul` will hold the checkboxes after they are created in the scripts.js file. 
+The application has two views:
 
-If another solution is needed, the svg will need to be amended to add an additional grouping, `g` tag with a unique id, underneath the `labels` grouping. It will require two parts: A new `rect` tag, and a new `text` tag. The `x` and `y` values will need to be calculated for positioning, but the rest of the attributes are fairly standard and can be copied. 
+**Cyber Insurance Applications** — Displays heatmaps of question coverage from 22 anonymized cyber insurance carrier applications. Each carrier's questions are mapped to CDM cells, and an aggregate view shows overall industry coverage.
 
-### styles.css
+**Threat TTPs from VCDB** — Displays MITRE ATT&CK techniques observed in real-world incidents from the VERIS Community Database, filterable by year (2021-2025). Techniques link directly to their MITRE ATT&CK definitions. The grid heatmap shows incident or campaign concentration per cell.
 
-`.grid` creates the grid within the body tag and sets the size of the checkboxes column to set width and then creates an automatic sizing for the chart. 
+A sidebar technology selector groups 45 cybersecurity solutions into seven domains, with overlays showing where each technology maps on the grid. Clicking any CDM cell highlights which technologies apply to that cell.
 
-`g.hide-solution` looks specifically for a grouping tag, `g`, that has the class `hide-solution` set, and will then apply the `display: none` style, hiding both the rectangle and the text nodes. 
+## File Structure
 
-### script.js
+```
+index.html                     Main page structure and layout
+styles.css                     All styling (grid, sidebar, tabs, overlays, TTP table)
+script.js                      Application logic (grid rendering, overlays, tabs, VCDB integration)
+insurance_data/
+  data_carrier_1..22.json      Anonymized insurance carrier question mappings (22 files)
+threat_data/
+  vcdb_data.json               VCDB-sourced MITRE ATT&CK technique data by year
+  data_TTPs.json               Legacy TTP mapping data
+test-solution-mappings.html    Regression tests for technology-to-cell mappings (45 tests)
+package.json                   Dev dependencies (jsdom for test harness)
+```
 
-`SOLUTIONS` is an array data structure that holds the id that matches the one added in the svg, and the label to set as the label for the corresponding text box. 
+## Data
 
-`HIDE_CLASS_NAME` matches the css stylesheet. 
+**Insurance data** (`insurance_data/`) — Each carrier file maps anonymized insurance application questions to CDM cells. Carrier names and specific question text are not included; only the cell-level mappings and question counts are stored. The data represents real cyber insurance applications but cannot be traced back to any specific insurer.
 
-`SOLUTIONS` gets iterated, creating the `li` tags, which in turn hold the checkboxes, that will be appended to the empty `ul` from `index.html`. 
+**Threat data** (`threat_data/`) — Sourced from the VERIS Community Database (VCDB), this data maps observed MITRE ATT&CK techniques to CDM cells with incident and campaign counts per year. Technique IDs link to the public MITRE ATT&CK knowledge base.
 
-First, we store the `ul` element we will be appending to, and then the `g` tag by finding the currennt id we are iterating on. 
+## License
 
-Second, because the groupings are desired to be hidden by default, we toggle `HIDE_CLASS_NAME` to add it to the `g` element. It adds because we don't have any class name in the svg, as this is an implementation detail we want to control in the javascript rather than the html directly. 
-
-Third, we create the elements we want to add to the `ul`: `li`, `label`, and `input`. We then set the appropriate attributes including using the id with `-checkbox` appended, before appending it to the document in two steps: First the children of the `li`, and then the `li` to the `ul`.
-
-Finally, we add an event listener on the `input` element we created to add the interactivity of hiding/showing the groupings based on the state of the checkbox. When the checkbox is in a checked state, the grouping will show and vice versa.
+Apache 2.0 — see [LICENSE](LICENSE).

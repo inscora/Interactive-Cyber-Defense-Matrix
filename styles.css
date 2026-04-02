@@ -698,7 +698,6 @@ button:active {
 .ttp-table .ttp-count {
   text-align: center;
   font-weight: 600;
-  color: #8ec8ff;
 }
 .ttp-table .ttp-cells {
   display: flex;
@@ -739,13 +738,36 @@ button:active {
   border-bottom-color: #8ec8ff;
 }
 
-.toggle-switch-small {
-  width: 32px;
-  height: 18px;
+/* Incidents / Campaigns segmented toggle */
+.counts-segmented {
+  display: inline-flex;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #1e2130;
 }
-.toggle-switch-small .toggle-slider::before {
-  height: 12px;
-  width: 12px;
-  left: 3px;
-  bottom: 3px;
+.counts-seg-btn {
+  padding: 3px 10px;
+  font-size: 11px;
+  font-family: inherit;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+  background: #12151f;
+  color: #4a4e65;
 }
+.counts-seg-btn:hover {
+  color: #8a8ea0;
+}
+.counts-seg-incidents.counts-seg-active {
+  background: #2a1f10;
+  color: #e8a840;
+}
+.counts-seg-campaigns.counts-seg-active {
+  background: #0e1f20;
+  color: #50c8b0;
+}
+
+/* TTP count column colors matching the segmented toggle */
+.ttp-count-incidents { color: #e8a840; }
+.ttp-count-campaigns { color: #50c8b0; }

@@ -50,12 +50,10 @@
             <button class="year-btn" data-year="2024">2024</button>
             <button class="year-btn" data-year="2025">2025</button>
             <span class="ttp-divider"></span>
-            <span class="toggle-counts-label">Incidents</span>
-            <label class="toggle-switch toggle-switch-small">
-              <input type="checkbox" id="ttpCountsToggle">
-              <span class="toggle-slider"></span>
-            </label>
-            <span class="toggle-counts-label">Campaigns</span>
+            <div class="counts-segmented">
+              <button id="countsModeIncidents" class="counts-seg-btn counts-seg-incidents counts-seg-active">Incidents</button>
+              <button id="countsModesCampaigns" class="counts-seg-btn counts-seg-campaigns">Campaigns</button>
+            </div>
           </div>
 
           <!-- Cell filter tag (inline, hidden by default) -->
