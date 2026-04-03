@@ -907,6 +907,36 @@ document.querySelectorAll('.year-btn').forEach(btn => {
   });
 });
 
+// ─── Screenshot to clipboard ────────────────────────────────────
+document.getElementById('screenshotBtn').addEventListener('click', async () => {
+  const btn = document.getElementById('screenshotBtn');
+  const wrapper = document.getElementById('gridWrapper');
+  try {
+    // Hide the button itself during capture
+    btn.style.visibility = 'hidden';
+    const canvas = await html2canvas(wrapper, {
+      backgroundColor: '#0f1117',
+      scale: 2,
+    });
+    btn.style.visibility = '';
+    canvas.toBlob(async (blob) => {
+      try {
+        await navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })]);
+        btn.classList.add('screenshot-ok');
+        setTimeout(() => btn.classList.remove('screenshot-ok'), 1200);
+      } catch {
+        // Fallback: download the image
+        const a = document.createElement('a');
+        a.href = canvas.toDataURL('image/png');
+        a.download = 'cdm-grid.png';
+        a.click();
+      }
+    }, 'image/png');
+  } catch {
+    btn.style.visibility = '';
+  }
+});
+
 // ─── Initial state ───────────────────────────────────────────────
 loadVCDBData().then(() => {
   clearDataset();

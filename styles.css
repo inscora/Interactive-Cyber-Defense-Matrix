@@ -38,6 +38,31 @@ body {
   max-width: 920px;
 }
 
+/* ── Screenshot button ───────────────────────────────── */
+.screenshot-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  z-index: 10;
+  background: rgba(30, 42, 64, 0.6);
+  border: 1px solid rgba(138, 180, 232, 0.2);
+  color: #8ab4e8;
+  border-radius: 6px;
+  padding: 5px 6px;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: opacity 0.2s, background 0.2s;
+  line-height: 0;
+}
+.screenshot-btn:hover {
+  opacity: 1;
+  background: rgba(30, 42, 64, 0.9);
+}
+.screenshot-btn.screenshot-ok {
+  color: #4ade80;
+  opacity: 1;
+}
+
 /* ── CDM Grid ────────────────────────────────────────── */
 .cdm-grid {
   width: 100%;
