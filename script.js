@@ -670,7 +670,7 @@ function renderTTPGrid(techniques) {
 async function loadVCDBData() {
   if (vcdbData) return;
   try {
-    const resp = await fetch('threat_data/vcdb_data.json');
+    const resp = await fetch('threat_data/vcdb_data.json?v=26');
     vcdbData = await resp.json();
   } catch (err) {
     console.error('Failed to load VCDB data:', err);

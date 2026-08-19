@@ -1,0 +1,135 @@
+{
+  "_comment": "Maps each MITRE ATT&CK mitigation (course-of-action) to the Cyber Defense Matrix cells it contributes. A technique's cells are the sum over its ATT&CK mitigations; the per-cell weight is the number of contributing mitigations. Mitigations with an empty object contribute no CDM cell, and a technique whose mitigations all fall in that group is excluded from the dataset entirely.",
+  "_provenance": "Recovered by solving the linear system implied by threat_data/vcdb_data.json (the 2026-03-31 snapshot): 129 techniques x their ATT&CK mitigation sets vs their published cell vectors. 34 of 37 in-use mitigations were uniquely determined by constraint propagation with zero conflicts. 'Exploit Protection', 'Threat Intelligence Program' and 'Vulnerability Scanning' only ever co-occur in pairs, so their split is under-determined; the semantically natural split below is consistent with every observation. The seven no-cell mitigations are inferred from technique exclusions and are likewise consistent with all 5 year buckets.",
+  "mitigations": {
+    "Account Use Policies": {
+      "Protect|Users": 1
+    },
+    "Active Directory Configuration": {
+      "Protect|Users": 1
+    },
+    "Antivirus/Antimalware": {
+      "Detect|Devices": 1,
+      "Detect|Applications": 1
+    },
+    "Application Developer Guidance": {
+      "Protect|Applications": 1
+    },
+    "Application Isolation and Sandboxing": {
+      "Protect|Applications": 1
+    },
+    "Audit": {
+      "Identify|Devices": 1,
+      "Identify|Applications": 1
+    },
+    "Behavior Prevention on Endpoint": {
+      "Detect|Devices": 1,
+      "Protect|Devices": 1
+    },
+    "Boot Integrity": {},
+    "Code Signing": {
+      "Protect|Applications": 1
+    },
+    "Credential Access Protection": {
+      "Protect|Users": 1
+    },
+    "Data Backup": {
+      "Recover|Data": 1
+    },
+    "Data Loss Prevention": {
+      "Detect|Data": 1,
+      "Protect|Data": 1
+    },
+    "Disable or Remove Feature or Program": {
+      "Protect|Devices": 1,
+      "Protect|Applications": 1
+    },
+    "Do Not Mitigate": {},
+    "Encrypt Sensitive Information": {
+      "Protect|Data": 1
+    },
+    "Environment Variable Permissions": {},
+    "Execution Prevention": {
+      "Protect|Applications": 1
+    },
+    "Exploit Protection": {
+      "Protect|Devices": 1,
+      "Protect|Applications": 1
+    },
+    "Filter Network Traffic": {
+      "Protect|Networks": 1
+    },
+    "Limit Access to Resource Over Network": {
+      "Protect|Networks": 1
+    },
+    "Limit Hardware Installation": {
+      "Protect|Devices": 1
+    },
+    "Limit Software Installation": {
+      "Protect|Applications": 1,
+      "Protect|Devices": 1
+    },
+    "Multi-factor Authentication": {
+      "Protect|Users": 1
+    },
+    "Network Intrusion Prevention": {
+      "Detect|Networks": 1,
+      "Protect|Networks": 1
+    },
+    "Network Segmentation": {
+      "Protect|Networks": 1
+    },
+    "Operating System Configuration": {
+      "Protect|Devices": 1
+    },
+    "Out-of-Band Communications Channel": {},
+    "Password Policies": {
+      "Protect|Users": 1
+    },
+    "Pre-compromise": {},
+    "Privileged Account Management": {
+      "Protect|Users": 1
+    },
+    "Privileged Process Integrity": {},
+    "Remote Data Storage": {},
+    "Restrict File and Directory Permissions": {
+      "Protect|Data": 1
+    },
+    "Restrict Library Loading": {
+      "Protect|Applications": 1
+    },
+    "Restrict Registry Permissions": {
+      "Protect|Devices": 1
+    },
+    "Restrict Web-Based Content": {
+      "Protect|Networks": 1
+    },
+    "SSL/TLS Inspection": {
+      "Detect|Networks": 1
+    },
+    "Software Configuration": {
+      "Protect|Applications": 1
+    },
+    "Threat Intelligence Program": {
+      "Identify|Networks": 1,
+      "Identify|Devices": 1
+    },
+    "Update Software": {
+      "Protect|Applications": 1
+    },
+    "User Account Control": {
+      "Protect|Users": 1,
+      "Protect|Devices": 1
+    },
+    "User Account Management": {
+      "Protect|Users": 1
+    },
+    "User Training": {
+      "Identify|Users": 1
+    },
+    "Vulnerability Scanning": {
+      "Identify|Applications": 1,
+      "Identify|Devices": 1
+    }
+  }
+}
